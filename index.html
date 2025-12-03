@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kexin Liu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg-dark: #222;
+      --bg-light: #f5f5f5;
+      --text-main: #111;
+      --text-muted: #666;
+      --accent: #1a73e8;
+      --max-width: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      color: var(--text-main);
+      background-color: #ffffff;
+      line-height: 1.6;
+    }
+
+    /* Top navigation bar */
+    .nav {
+      background: var(--bg-dark);
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.8rem 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.95rem;
+      letter-spacing: 0.03em;
+    }
+
+    .nav a:hover,
+    .nav a:focus {
+      text-decoration: underline;
+    }
+
+    /* Hero section */
+    .hero {
+      background: var(--bg-light);
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    .hero-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+
+    .hero-text {
+      flex: 1.4;
+    }
+
+    .hero-name {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .hero-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+    }
+
+    .hero-affil {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      font-size: 0.95rem;
+    }
+
+    .hero-links a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .hero-links a:hover,
+    .hero-links a:focus {
+      text-decoration: underline;
+    }
+
+    /* Photo */
+    .hero-photo-wrapper {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-photo {
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+    }
+
+    /* Generic sections */
+    section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem 1.5rem 1rem;
+    }
+
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+    }
+
+    section h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.4rem;
+      width: 50px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    section p {
+      max-width: 70ch;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    ul {
+      margin-top: 0.5rem;
+      padding-left: 1.1rem;
+      color: var(--text-muted);
+      font-size: 0.96rem;
+    }
+
+    footer {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-inner {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+
+      .hero-photo-wrapper {
+        justify-content: flex-start;
+      }
+
+      .hero-photo {
+        width: 170px;
+        height: 170px;
+      }
+
+      .nav-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#home">Home</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="hero-name">Kexin Liu</h1>
+        <div class="hero-title">PhD Student, [Your Program]</div>
+        <div class="hero-affil">[Your Department], [Your University]</div>
+
+        <div class="hero-links">
+          <a href="mailto:you@example.com">Email</a>
+          <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com/ke-xin-liu" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrapper">
+        <!-- Put your own photo in /images/profile.jpg -->
+        <img
+          src="images/profile.jpg"
+          alt="Photo of Kexin Liu"
+          class="hero-photo"
+        />
+      </div>
+    </div>
+  </header>
+
+  <!-- Research -->
+  <section id="research">
+    <h2>Research</h2>
+    <p>
+      Brief paragraph about your research interests. For example: I work on
+      computer vision and robotics for construction, focusing on human-centered
+      productivity, safety, and automation.
+    </p>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li>
+        <strong>Title of Paper 1</strong> – Authors, Conference or Journal, Year.
+      </li>
+      <li>
+        <strong>Title of Paper 2</strong> – Authors, Conference or Journal, Year.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Project 1:</strong> short one-line description.</li>
+      <li><strong>Project 2:</strong> short one-line description.</li>
+    </ul>
+  </section>
+
+  <!-- CV -->
+  <section id="cv">
+    <h2>CV</h2>
+    <p>
+      You can download my CV
+      <a href="cv/Kexin_Liu_CV.pdf" target="_blank">here</a>.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Best way to reach me is via email at
+      <a href="mailto:you@example.com">you@example.com</a>.
+    </p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Kexin Liu.
+  </footer>
+
+  <script>
+    // Update year automatically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
