@@ -69,12 +69,40 @@
         font-size: 1.25rem;
         color: var(--accent);
         font-weight: 500;
+        margin: 0 0 0.25rem 0;
+      }
+      .hero-affiliation {
+        font-size: 1.1rem;
+        color: #78716c;
         margin: 0 0 1rem 0;
       }
       .hero-bio {
         color: #57534e;
         font-size: 1.1rem;
         max-width: 600px;
+        white-space: pre-wrap;
+        margin-bottom: 1.5rem;
+      }
+      .contact-links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .contact-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #e7e5e4;
+        color: var(--accent);
+        transition: all 0.2s;
+        text-decoration: none;
+      }
+      .contact-link:hover {
+        background: #f5f5f4;
+        transform: translateY(-2px);
       }
 
       /* Main Content */
@@ -117,7 +145,7 @@
     </style></head><body><nav class="navbar"><a href="#1" class="nav-link" onclick="showSection('1')">Home</a>
 <a href="#2" class="nav-link" onclick="showSection('2')">Research</a>
 <a href="#1771979629025" class="nav-link" onclick="showSection('1771979629025')">Project</a>
-<a href="#1771979693724" class="nav-link" onclick="showSection('1771979693724')">Teaching</a></nav><header class="hero"><img src="https://avatars.githubusercontent.com/u/190426906?v=4" class="hero-avatar" alt="Profile"><div class="hero-content"><h1 class="hero-name">Kexin Liu</h1><div class="hero-title">PhD Candidate</div><div class="hero-bio">University of Alberta</div></div></header><main class="main-content">
+<a href="#1771979693724" class="nav-link" onclick="showSection('1771979693724')">Teaching</a></nav><header class="hero"><img src="https://avatars.githubusercontent.com/u/190426906?v=4" class="hero-avatar" alt="Profile"><div class="hero-content"><h1 class="hero-name">Kexin Liu</h1><div class="hero-title">PhD Candidate</div><div class="hero-affiliation">University of Alberta</div><div class="hero-bio"></div><div class="contact-links"><a href="https://www.linkedin.com/in/kexin-liu-425035200" target="_blank" class="contact-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a></div></div></header><main class="main-content">
         <section id="1" class="content-section active">
           <h1>Hello</h1><p><span style="color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;">I'm currently a PhD candidate at the University of Alberta. My research focuses on using digital twin-based Extended Reality (VR, AR, and MR) to enhance fire safety management on construction sites, reducing construction workers' injuries and deaths, and property loss.</span></p>
         </section>
@@ -129,7 +157,7 @@
 
             <div class="block-publication">
               <div class="pub-title"><a href="https://doi.org/10.1108/ecam-11-2024-1519" target="_blank">A scoping review of fire safety on building construction sites: current measures, practices and future research directions</a></div>
-              <div class="pub-authors">Kexin Liu, Vicente A. González, Gaang Lee, Max Kinateder</div>
+              <div class="pub-authors">Kexin Liu, Vicente A. GonzÃ¡lez, Gaang Lee, Max Kinateder</div>
               <div class="pub-meta">Engineering, Construction and Architectural Management 2025</div>
             </div>
         </section>
@@ -137,6 +165,23 @@
 
         <section id="1771979629025" class="content-section ">
           
+            <div class="block-project">
+              
+              <div class="proj-content">
+                <div class="proj-title">Optimization Algorithm Based on Subset Simulation for Resource Leveling Problem with  Multiple Resources</div>
+                <div class="proj-desc"><span style="color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 14px; white-space-collapse: preserve;">1.  Reformed the model of the Resource Leveling Problem by introducing interval rate variables as design variables to avoid using complicated repair operators when the logic between activities is violated; 
+2.  Tested the proposed optimization algorithm in Matlab,  the result  shows that it can obtain greater improvement in the stability of achieving optimal solutions compared with the traditional Genetic 
+Algorithm.</span></div>
+              </div>
+            </div>
+
+            <div class="block-project">
+              
+              <div class="proj-content">
+                <div class="proj-title">Construction Safety Warning of High-speed Railway Station Building Based on  BIM Technology</div>
+                <div class="proj-desc"><span style="color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;">1. Established evacuation models to simulate the evacuation of construction workers and passengers in the complex construction stage using Pathfinder.</span><br><span style="color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;">2. Participated in the classification of the hazardous area and the early warning level of the construction site</span><span style="color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 14px; white-space-collapse: preserve;"></span></div>
+              </div>
+            </div>
         </section>
       
 
@@ -145,9 +190,16 @@
             <div class="block-project">
               <img src="proj-1771980237540.png" class="proj-img" alt="CIV E 265 - Engineering Drawing and Computer Graphics">
               <div class="proj-content">
-                <div class="proj-title"><a href="#" target="_blank">CIV E 265 - Engineering Drawing and Computer Graphics</a></div>
-                <div class="proj-desc">Lab instructor, teaching Revit.
-2023/2024/2025 Fall Term</div>
+                <div class="proj-title">CIV E 265 - Engineering Drawing and Computer Graphics</div>
+                <div class="proj-desc">Lab instructor, teaching Revit.&nbsp;<div>2023/2024/2025 Fall Term</div></div>
+              </div>
+            </div>
+
+            <div class="block-project">
+              
+              <div class="proj-content">
+                <div class="proj-title">CIV E 601 - Analytical Methods for Project Management </div>
+                <div class="proj-desc"><span style="color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 14px; white-space-collapse: preserve;">Teaching Assistant, Fall 2024</span></div>
               </div>
             </div>
         </section>
