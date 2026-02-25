@@ -11,12 +11,12 @@
       "title": "Home",
       "blocks": [
         {
-          "id": "b-1772008530304-c48615jag",
+          "id": "b-1772042226350-5cb79040m",
           "type": "text",
           "content": "<h1>Hello</h1>\n<p><span style=\"color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;\">I'm currently a PhD candidate at the University of Alberta. My research focuses on using digital twin-based Extended Reality (VR, AR, and MR) to enhance fire safety management on construction sites, reducing construction workers' injuries and deaths, and property loss.</span></p>"
         },
         {
-          "id": "b-1772008530304-tjdhzt26t",
+          "id": "b-1772042226350-hgc5xlpn6",
           "type": "keywords",
           "tags": [
             "VR",
@@ -34,12 +34,12 @@
       "title": "Research",
       "blocks": [
         {
-          "id": "b-1772008530304-c40233iiz",
+          "id": "b-1772042226350-35cbq4b0p",
           "type": "text",
           "content": "<p><br></p>\n<h2><b><font size=\"5\">Publications</font></b></h2>"
         },
         {
-          "id": "b-1772008530304-oeh9bpl5s",
+          "id": "b-1772042226350-wjbv0zh0m",
           "type": "publication",
           "title": "Developing a Digital Twin-based Framework for Construction Fire Hazard Recognition Training",
           "link": "https://doi.org/10.22260/isarc2025/0139",
@@ -48,7 +48,7 @@
           "year": "2025"
         },
         {
-          "id": "b-1772008530304-shf0k9xmb",
+          "id": "b-1772042226350-83irno76z",
           "type": "publication",
           "title": "A scoping review of fire safety on building construction sites: current measures, practices and future research directions",
           "link": "https://doi.org/10.1108/ecam-11-2024-1519",
@@ -57,7 +57,7 @@
           "year": "2025"
         },
         {
-          "id": "b-1772008530304-hwho1oq8g",
+          "id": "b-1772042226350-cekukydf4",
           "type": "publication",
           "title": "Exploring Fire Safety Challenges on Construction Sites: Insights from Stakeholders",
           "link": "https://doi.org/10.7771/3067-4883.1242",
@@ -66,7 +66,7 @@
           "year": "2025"
         },
         {
-          "id": "b-1772008530304-scc11b4jv",
+          "id": "b-1772042226350-0us8s2636",
           "type": "publication",
           "title": "A Fuzzy Expert System for Measuring the Degree of Lean Implementation in Construction Projects",
           "link": "https://doi.org/10.24928/2024/0159",
@@ -75,7 +75,7 @@
           "year": "2024"
         },
         {
-          "id": "b-1772008530304-333z8ocg0",
+          "id": "b-1772042226350-brc8oaz1k",
           "type": "publication",
           "title": "The Analysis of Construction Workplace Incident Fatalities Using Text Mining and Classification Techniques",
           "link": "https://doi.org/10.1007/978-3-031-61503-0_12",
@@ -91,7 +91,7 @@
       "title": "Project",
       "blocks": [
         {
-          "id": "b-1772008530304-tcy0nmxqs",
+          "id": "b-1772042226350-6rltrb6yp",
           "type": "project",
           "title": "Optimization Algorithm Based on Subset Simulation for Resource Leveling Problem with  Multiple Resources",
           "link": "",
@@ -100,7 +100,7 @@
           "imageWidth": 160
         },
         {
-          "id": "b-1772008530304-62o1pxd32",
+          "id": "b-1772042226350-e2ya70qdd",
           "type": "project",
           "title": "Evacuation Simulation for a High-Speed Railway Station During Construction",
           "link": "",
@@ -116,29 +116,29 @@
       "title": "Teaching",
       "blocks": [
         {
-          "id": "b-1772008530304-jx6156w8m",
+          "id": "b-1772042226350-8a4fs5poo",
           "type": "project",
           "title": "CIV E 265 - Engineering Drawing and Computer Graphics",
           "link": "",
-          "description": "<b>Lab instructor</b>, teaching Revit.&nbsp;<div>2023/2024/202<span style=\"font-size: 11pt;\">5 Fall term</span></div>",
+          "description": "<b>Revit Lab instructor</b>&nbsp;- Fall 2023/2024/202<span style=\"font-size: 11pt;\">5</span>",
           "imageUrl": "",
           "imageWidth": 160
         },
         {
-          "id": "b-1772008530304-27xka51yh",
+          "id": "b-1772042226350-hsdbm6eav",
           "type": "project",
           "title": "CIV E 601 - Analytical Methods for Project Management ",
           "link": "",
-          "description": "<span style=\"color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;\"><b>Teaching Assistant</b>, Fall 2024</span>",
+          "description": "<span style=\"color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;\"><b>Teaching Assistant </b>- Fall 2024</span>",
           "imageUrl": "",
           "imageWidth": 160
         },
         {
-          "id": "b-1772008530304-5wc3md52b",
+          "id": "b-1772042226350-hfyogv52v",
           "type": "project",
-          "title": "",
+          "title": "CIV E 409 - Construction Methods",
           "link": "",
-          "description": "",
+          "description": "&nbsp;<span style=\"font-weight: bolder; color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;\">Teaching Assistant </span>- Winter 2024",
           "imageUrl": "",
           "imageWidth": 160
         }
@@ -147,7 +147,7 @@
   ],
   "theme": "minimal",
   "style": {
-    "bgColor": "#ffffff",
+    "bgColor": "#fafafa",
     "textColor": "#1c1917",
     "accentColor": "#226808",
     "sidebarBg": "#ffffff",
