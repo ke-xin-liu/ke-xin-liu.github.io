@@ -1,59 +1,130 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Kexin Liu</title><style>
       :root { 
-        --bg: #eef3f6; 
+        --bg: #ffffff; 
         --text: #1c1917; 
-        --accent: #2563eb; 
-        --sidebar: #ffffff; 
+        --accent: #226808; 
       }
       body { 
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
         font-size: 16px;
-        margin: 0; display: flex; min-height: 100vh; background: var(--bg); color: var(--text); 
+        margin: 0; 
+        background: var(--bg); 
+        color: var(--text); 
+        line-height: 1.6;
       }
-      .sidebar { width: 280px; background: var(--sidebar); padding: 2rem; border-right: 1px solid #e7e5e4; position: fixed; height: 100vh; overflow-y: auto; }
-      .main-content { margin-left: 280px; padding: 4rem; max-width: 800px; width: 100%; }
-      .profile { margin-bottom: 3rem; }
-      .avatar { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; }
-      .nav-link { display: block; padding: 0.5rem 0; color: #57534e; text-decoration: none; font-weight: 500; cursor: pointer; }
-      .nav-link:hover { color: var(--accent); }
+      
+      /* Navigation */
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+        position: sticky;
+        top: 0;
+        background: var(--bg);
+        z-index: 100;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+      }
+      .nav-link { 
+        color: #57534e; 
+        text-decoration: none; 
+        font-weight: 500; 
+        cursor: pointer; 
+        font-size: 1.1rem;
+        padding-bottom: 0.25rem;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s;
+      }
+      .nav-link:hover, .nav-link.active { 
+        color: var(--accent); 
+        border-color: var(--accent);
+      }
+
+      /* Hero Section */
+      .hero {
+        max-width: 900px;
+        margin: 4rem auto;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+      }
+      .hero-avatar {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+      .hero-content {
+        flex: 1;
+      }
+      .hero-name {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 0 0 0.5rem 0;
+        line-height: 1.2;
+      }
+      .hero-title {
+        font-size: 1.25rem;
+        color: var(--accent);
+        font-weight: 500;
+        margin: 0 0 1rem 0;
+      }
+      .hero-bio {
+        color: #57534e;
+        font-size: 1.1rem;
+        max-width: 600px;
+      }
+
+      /* Main Content */
+      .main-content { 
+        max-width: 900px; 
+        margin: 0 auto; 
+        padding: 0 2rem 4rem 2rem; 
+      }
+      
       .content-section { display: none; animation: fadeIn 0.3s ease; }
       .content-section.active { display: block; }
       @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-      h1, h2, h3 { margin-top: 0; }
+      
+      h1, h2, h3 { margin-top: 2rem; margin-bottom: 1rem; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; border-bottom: 1px solid #e7e5e4; padding-bottom: 0.5rem; }
       img { max-width: 100%; border-radius: 8px; }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
       
       /* Block Styles */
       .block-image { margin: 2rem 0; }
-      .block-image figcaption { color: #78716c; font-size: 0.9rem; margin-top: 0.5rem; }
+      .block-image figcaption { color: #78716c; font-size: 0.9rem; margin-top: 0.5rem; text-align: center; }
       .block-publication { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e7e5e4; }
       .pub-title { font-weight: 600; font-size: 1.1rem; }
-      .pub-title a { color: inherit; text-decoration: none; }
-      .pub-title a:hover { color: var(--accent); }
-      .pub-authors { color: #44403c; }
-      .pub-meta { color: #78716c; font-size: 0.9rem; }
+      .pub-authors { color: #44403c; margin-top: 0.25rem; }
+      .pub-meta { color: #78716c; font-size: 0.9rem; margin-top: 0.25rem; }
       
       .block-project { display: flex; gap: 1.5rem; margin-bottom: 2rem; align-items: start; }
-      .proj-img { width: 120px; height: 80px; object-fit: cover; border-radius: 6px; }
-      .proj-title { font-weight: 600; margin-bottom: 0.25rem; }
-      .proj-title a { color: inherit; text-decoration: none; }
-      .proj-desc { color: #57534e; font-size: 0.95rem; }
+      .proj-img { width: 160px; height: 100px; object-fit: cover; border-radius: 8px; }
+      .proj-title { font-weight: 600; margin-bottom: 0.25rem; font-size: 1.1rem; }
+      .proj-desc { color: #57534e; font-size: 1rem; line-height: 1.5; }
 
       @media (max-width: 768px) {
-        body { flex-direction: column; }
-        .sidebar { width: 100%; height: auto; position: relative; border-right: none; border-bottom: 1px solid #e7e5e4; }
-        .main-content { margin-left: 0; padding: 2rem; }
+        .hero { flex-direction: column; text-align: center; gap: 2rem; margin: 2rem auto; }
+        .block-project { flex-direction: column; }
+        .proj-img { width: 100%; height: 200px; }
+        .navbar { gap: 1rem; flex-wrap: wrap; }
       }
-    </style></head><body><div class="sidebar"><div class="profile"><img src="https://avatars.githubusercontent.com/u/190426906?v=4" class="avatar" alt="Profile"><h1>Kexin Liu</h1></div><nav><a href="#1" class="nav-link" onclick="showSection('1')">Home</a>
+    </style></head><body><nav class="navbar"><a href="#1" class="nav-link" onclick="showSection('1')">Home</a>
 <a href="#2" class="nav-link" onclick="showSection('2')">Research</a>
-<a href="#1771978684665" class="nav-link" onclick="showSection('1771978684665')">Project</a>
-<a href="#1771978697457" class="nav-link" onclick="showSection('1771978697457')">Teaching</a></nav></div><main class="main-content">
+<a href="#1771979629025" class="nav-link" onclick="showSection('1771979629025')">Project</a>
+<a href="#1771979693724" class="nav-link" onclick="showSection('1771979693724')">Teaching</a></nav><header class="hero"><img src="https://avatars.githubusercontent.com/u/190426906?v=4" class="hero-avatar" alt="Profile"><div class="hero-content"><h1 class="hero-name">Kexin Liu</h1><div class="hero-title">PhD Candidate</div><div class="hero-bio">University of Alberta</div></div></header><main class="main-content">
         <section id="1" class="content-section active">
-          <h1>Welcome</h1><p>I am currently working on using IVR (immersive virtual reality) for construction safety trainig.&nbsp;</p>
+          <h1>Hello</h1><p><span style="color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;">I'm currently a PhD candidate at the University of Alberta. My research focuses on using digital twin-based Extended Reality (VR, AR, and MR) to enhance fire safety management on construction sites, reducing construction workers' injuries and deaths, and property loss.</span></p>
         </section>
       
 
         <section id="2" class="content-section ">
-          <p>New text block</p>
+          <p><br></p>
 <h2><b><font size="5">Publications</font></b></h2>
 
             <div class="block-publication">
@@ -64,12 +135,20 @@
         </section>
       
 
-        <section id="1771978684665" class="content-section ">
+        <section id="1771979629025" class="content-section ">
           
         </section>
       
 
-        <section id="1771978697457" class="content-section ">
+        <section id="1771979693724" class="content-section ">
           
+            <div class="block-project">
+              <img src="proj-1771980237540.png" class="proj-img" alt="CIV E 265 - Engineering Drawing and Computer Graphics">
+              <div class="proj-content">
+                <div class="proj-title"><a href="#" target="_blank">CIV E 265 - Engineering Drawing and Computer Graphics</a></div>
+                <div class="proj-desc">Lab instructor, teaching Revit.
+2023/2024/2025 Fall Term</div>
+              </div>
+            </div>
         </section>
-      </main><script>function showSection(id){document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));document.getElementById(id).classList.add('active');}</script></body></html>
+      </main><script>function showSection(id){document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));event.target.classList.add('active');}</script></body></html>
