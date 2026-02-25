@@ -1,0 +1,165 @@
+{
+  "username": "Kexin Liu",
+  "userTitle": "PhD Candidate",
+  "affiliation": "University of Alberta",
+  "shortBio": "",
+  "repoName": "ke-xin-liu.github.io",
+  "modules": [
+    {
+      "id": "1",
+      "type": "custom",
+      "title": "Home",
+      "blocks": [
+        {
+          "id": "b-1772008530304-c48615jag",
+          "type": "text",
+          "content": "<h1>Hello</h1>\n<p><span style=\"color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;\">I'm currently a PhD candidate at the University of Alberta. My research focuses on using digital twin-based Extended Reality (VR, AR, and MR) to enhance fire safety management on construction sites, reducing construction workers' injuries and deaths, and property loss.</span></p>"
+        },
+        {
+          "id": "b-1772008530304-tjdhzt26t",
+          "type": "keywords",
+          "tags": [
+            "VR",
+            "Construction Safety",
+            "Digital Twin",
+            "BIM",
+            "Optimization"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "type": "custom",
+      "title": "Research",
+      "blocks": [
+        {
+          "id": "b-1772008530304-c40233iiz",
+          "type": "text",
+          "content": "<p><br></p>\n<h2><b><font size=\"5\">Publications</font></b></h2>"
+        },
+        {
+          "id": "b-1772008530304-oeh9bpl5s",
+          "type": "publication",
+          "title": "Developing a Digital Twin-based Framework for Construction Fire Hazard Recognition Training",
+          "link": "https://doi.org/10.22260/isarc2025/0139",
+          "authors": "Kexin Liu, Mohamed Sabek, Gaang Lee, Max Kinateder, Vicente A. Gonzalez",
+          "venue": "Proceedings of the International Symposium on Automation and Robotics in Construction (IAARC)",
+          "year": "2025"
+        },
+        {
+          "id": "b-1772008530304-shf0k9xmb",
+          "type": "publication",
+          "title": "A scoping review of fire safety on building construction sites: current measures, practices and future research directions",
+          "link": "https://doi.org/10.1108/ecam-11-2024-1519",
+          "authors": "Kexin Liu, Vicente A. GonzÃÂ¡lez, Gaang Lee, Max Kinateder",
+          "venue": "Engineering, Construction and Architectural Management",
+          "year": "2025"
+        },
+        {
+          "id": "b-1772008530304-hwho1oq8g",
+          "type": "publication",
+          "title": "Exploring Fire Safety Challenges on Construction Sites: Insights from Stakeholders",
+          "link": "https://doi.org/10.7771/3067-4883.1242",
+          "authors": "Kexin Liu, Gaang Lee, Max Kinateder, Vicente A. GonzÃ¡lez",
+          "venue": "CIB Conferences",
+          "year": "2025"
+        },
+        {
+          "id": "b-1772008530304-scc11b4jv",
+          "type": "publication",
+          "title": "A Fuzzy Expert System for Measuring the Degree of Lean Implementation in Construction Projects",
+          "link": "https://doi.org/10.24928/2024/0159",
+          "authors": "Rana Ead, Kexin Liu, Amira Saleh, Sena Assaf, Vicente Gonzalez-Moret, Farook Hamzeh",
+          "venue": "Annual Conference of the International Group for Lean Construction",
+          "year": "2024"
+        },
+        {
+          "id": "b-1772008530304-333z8ocg0",
+          "type": "publication",
+          "title": "The Analysis of Construction Workplace Incident Fatalities Using Text Mining and Classification Techniques",
+          "link": "https://doi.org/10.1007/978-3-031-61503-0_12",
+          "authors": "Sena Assaf, Kexin Liu, Zeyu Mao, Amira Saleh, Abbey Abellanosa, Yasser Mohamed",
+          "venue": "Lecture Notes in Civil Engineering",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "id": "1771979629025",
+      "type": "custom",
+      "title": "Project",
+      "blocks": [
+        {
+          "id": "b-1772008530304-tcy0nmxqs",
+          "type": "project",
+          "title": "Optimization Algorithm Based on Subset Simulation for Resource Leveling Problem with  Multiple Resources",
+          "link": "",
+          "description": "<span style=\"color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 14px; white-space-collapse: preserve;\">1.  Reformed the model of the Resource Leveling Problem by introducing interval rate variables as design variables to avoid using complicated repair operators when the logic between activities is violated; \n2.  Tested the proposed optimization algorithm in Matlab,  the result  shows that it can obtain greater improvement in the stability of achieving optimal solutions compared with the traditional Genetic \nAlgorithm.</span>",
+          "imageUrl": "",
+          "imageWidth": 160
+        },
+        {
+          "id": "b-1772008530304-62o1pxd32",
+          "type": "project",
+          "title": "Evacuation Simulation for a High-Speed Railway Station During Construction",
+          "link": "",
+          "description": "<ul><li>Built a BIM-integrated evacuation model in Pathfinder to simulate mixed evacuation of 2,400 workers and passengers during the construction phase.</li><li>Evaluated emergency scenarios (e.g., stair blockage and guided evacuation) to identify bottlenecks and flow inefficiencies.</li><li>Reduced total evacuation time by 23.7 seconds and improved efficiency by 10.16%, supporting data-driven safety planning and layout optimization.</li></ul>",
+          "imageUrl": "https://ke-xin-liu.github.io/proj-1771981795128.png",
+          "imageWidth": 160
+        }
+      ]
+    },
+    {
+      "id": "1771979693724",
+      "type": "custom",
+      "title": "Teaching",
+      "blocks": [
+        {
+          "id": "b-1772008530304-jx6156w8m",
+          "type": "project",
+          "title": "CIV E 265 - Engineering Drawing and Computer Graphics",
+          "link": "",
+          "description": "<b>Lab instructor</b>, teaching Revit.&nbsp;<div>2023/2024/2025 Fall Term</div>",
+          "imageUrl": "",
+          "imageWidth": 160
+        },
+        {
+          "id": "b-1772008530304-27xka51yh",
+          "type": "project",
+          "title": "CIV E 601 - Analytical Methods for Project Management ",
+          "link": "",
+          "description": "<span style=\"color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;\"><b>Teaching Assistant</b>, Fall 2024</span>",
+          "imageUrl": "",
+          "imageWidth": 160
+        },
+        {
+          "id": "b-1772008530304-5wc3md52b",
+          "type": "project",
+          "title": "",
+          "link": "",
+          "description": "",
+          "imageUrl": "",
+          "imageWidth": 160
+        }
+      ]
+    }
+  ],
+  "theme": "minimal",
+  "style": {
+    "bgColor": "#ffffff",
+    "textColor": "#1c1917",
+    "accentColor": "#226808",
+    "sidebarBg": "#ffffff",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif",
+    "fontSize": "16px"
+  },
+  "contactLinks": [
+    {
+      "id": "link-0",
+      "platform": "linkedin",
+      "url": "https://www.linkedin.com/in/kexin-liu-425035200"
+    }
+  ],
+  "avatarUrl": "https://avatars.githubusercontent.com/u/190426906?v=4"
+}
