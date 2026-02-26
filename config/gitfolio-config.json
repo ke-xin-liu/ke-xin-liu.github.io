@@ -11,12 +11,12 @@
       "title": "Home",
       "blocks": [
         {
-          "id": "b-1772078049781-39a6cqefv",
+          "id": "b-1772079004606-qa7vtowrl",
           "type": "text",
           "content": "<h1>Hello</h1>\n<p><span style=\"color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;\">I'm currently a PhD candidate at the University of Alberta. My research focuses on using digital twin-based Extended Reality (VR, AR, and MR) to enhance fire safety management on construction sites, reducing construction workers' injuries and deaths, and property loss.</span></p>"
         },
         {
-          "id": "b-1772078049781-f54aharfa",
+          "id": "b-1772079004606-gro1c3tze",
           "type": "keywords",
           "tags": [
             "VR",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "id": "b-1772078049781-v3hiospzi",
+          "id": "b-1772079004606-c6o32unri",
           "type": "text",
           "content": "<p><br></p>\n<p><br></p>\n<p><br></p>"
         }
@@ -39,12 +39,12 @@
       "title": "Research",
       "blocks": [
         {
-          "id": "b-1772078049781-7ghcp6je0",
+          "id": "b-1772079004606-050nd05ft",
           "type": "text",
           "content": "<p><br></p>\n<h2><b><font size=\"5\">Publications</font></b></h2>"
         },
         {
-          "id": "b-1772078049781-sje89gcce",
+          "id": "b-1772079004606-ki5zm8t8v",
           "type": "publication",
           "title": "Developing a Digital Twin-based Framework for Construction Fire Hazard Recognition Training",
           "link": "https://doi.org/10.22260/isarc2025/0139",
@@ -53,7 +53,7 @@
           "year": "2025"
         },
         {
-          "id": "b-1772078049781-a28jgbyn2",
+          "id": "b-1772079004606-tkuanks0q",
           "type": "publication",
           "title": "A scoping review of fire safety on building construction sites: current measures, practices and future research directions",
           "link": "https://doi.org/10.1108/ecam-11-2024-1519",
@@ -62,7 +62,7 @@
           "year": "2025"
         },
         {
-          "id": "b-1772078049781-ei3h6yt1j",
+          "id": "b-1772079004606-hdbvx274h",
           "type": "publication",
           "title": "Exploring Fire Safety Challenges on Construction Sites: Insights from Stakeholders",
           "link": "https://doi.org/10.7771/3067-4883.1242",
@@ -71,7 +71,7 @@
           "year": "2025"
         },
         {
-          "id": "b-1772078049781-6iqvrtw88",
+          "id": "b-1772079004606-chcnw4b7r",
           "type": "publication",
           "title": "A Fuzzy Expert System for Measuring the Degree of Lean Implementation in Construction Projects",
           "link": "https://doi.org/10.24928/2024/0159",
@@ -80,7 +80,7 @@
           "year": "2024"
         },
         {
-          "id": "b-1772078049781-ts9prxb6h",
+          "id": "b-1772079004606-6tl8mb1tz",
           "type": "publication",
           "title": "The Analysis of Construction Workplace Incident Fatalities Using Text Mining and Classification Techniques",
           "link": "https://doi.org/10.1007/978-3-031-61503-0_12",
@@ -96,25 +96,25 @@
       "title": "Project",
       "blocks": [
         {
-          "id": "b-1772078049781-eepg5oirl",
+          "id": "b-1772079004606-e51czo2i0",
           "type": "project",
           "title": "Optimization Algorithm Based on Subset Simulation for Resource Leveling Problem with  Multiple Resources (2019-2021)",
           "link": "",
           "description": "<b data-path-to-node=\"1,0,0\" data-index-in-node=\"0\">Model Reformation:</b> Introduced interval rate variables to the Resource Leveling Problem, eliminating the need for complex repair operators.<br><b data-path-to-node=\"1,1,0\" data-index-in-node=\"0\">Performance Benchmarking:</b> Validated the proposed algorithm in MATLAB, achieving higher stability and solution optimality than traditional Genetic Algorithms.<br><b data-path-to-node=\"1,2,0\" data-index-in-node=\"0\">Application Development:</b> Developed a MATLAB GUI to streamline the optimization process for end-users.",
-          "imageUrl": "https://ke-xin-liu.github.io/proj-b-1772042226350-6rltrb6yp.png",
+          "imageUrl": "https://ke-xin-liu.github.io/assets/proj-b-1772042226350-6rltrb6yp.png",
           "imageWidth": 300
         },
         {
-          "id": "b-1772078049781-nqlo0pm5r",
+          "id": "b-1772079004606-r447wi1rp",
           "type": "project",
           "title": "Evacuation Simulation for a High-Speed Railway Station During Construction (2017)",
           "link": "",
           "description": "<b data-path-to-node=\"1,0,0\" data-index-in-node=\"0\">BIM-Evacuation Modeling:</b> Integrated BIM data into Pathfinder for mixed-flow worker and passenger simulations.<br><b data-path-to-node=\"1,1,0\" data-index-in-node=\"0\">Scenario Evaluation:</b> Analyzed emergency bottlenecks and flow inefficiencies under stair blockage and guided scenarios.<br><b data-path-to-node=\"1,2,0\" data-index-in-node=\"0\">Efficiency Optimization:</b> Reduced evacuation time by 23.7s, supporting data-driven safety planning.",
-          "imageUrl": "https://ke-xin-liu.github.io/proj-1771981795128.png",
+          "imageUrl": "https://ke-xin-liu.github.io/assets/proj-1771981795128.png",
           "imageWidth": 300
         },
         {
-          "id": "b-1772078049781-oin5z4htd",
+          "id": "b-1772079004606-u4c67nmau",
           "type": "project",
           "title": "Bentley Institute Student Design - (2016)",
           "link": "",
@@ -130,7 +130,7 @@
       "title": "Teaching",
       "blocks": [
         {
-          "id": "b-1772078049781-mftijnpgu",
+          "id": "b-1772079004606-aofg6800s",
           "type": "project",
           "title": "CIV E 265 - Engineering Drawing and Computer Graphics",
           "link": "",
@@ -139,7 +139,7 @@
           "imageWidth": 160
         },
         {
-          "id": "b-1772078049781-7gajpv3d5",
+          "id": "b-1772079004606-wqd1kwqsl",
           "type": "project",
           "title": "CIV E 601 - Analytical Methods for Project Management ",
           "link": "",
@@ -148,7 +148,7 @@
           "imageWidth": 160
         },
         {
-          "id": "b-1772078049781-y52t08r80",
+          "id": "b-1772079004606-nebau5kmd",
           "type": "project",
           "title": "CIV E 409 - Construction Methods",
           "link": "",
