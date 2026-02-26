@@ -11,12 +11,12 @@
       "title": "Home",
       "blocks": [
         {
-          "id": "b-1772048945223-6nrsnueum",
+          "id": "b-1772077963301-4r7rjrzza",
           "type": "text",
           "content": "<h1>Hello</h1>\n<p><span style=\"color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;\">I'm currently a PhD candidate at the University of Alberta. My research focuses on using digital twin-based Extended Reality (VR, AR, and MR) to enhance fire safety management on construction sites, reducing construction workers' injuries and deaths, and property loss.</span></p>"
         },
         {
-          "id": "b-1772048945223-yeg6pxom1",
+          "id": "b-1772077963301-mgx0nx6y8",
           "type": "keywords",
           "tags": [
             "VR",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "id": "b-1772048945223-1qgo9ceyl",
+          "id": "b-1772077963301-vajzsjaqd",
           "type": "text",
           "content": "<p><br></p>\n<p><br></p>\n<p><br></p>"
         }
@@ -39,12 +39,12 @@
       "title": "Research",
       "blocks": [
         {
-          "id": "b-1772048945223-gt9u0pgou",
+          "id": "b-1772077963301-etgmjqu5h",
           "type": "text",
           "content": "<p><br></p>\n<h2><b><font size=\"5\">Publications</font></b></h2>"
         },
         {
-          "id": "b-1772048945223-fcpw32zkl",
+          "id": "b-1772077963301-yd3gmorgl",
           "type": "publication",
           "title": "Developing a Digital Twin-based Framework for Construction Fire Hazard Recognition Training",
           "link": "https://doi.org/10.22260/isarc2025/0139",
@@ -53,7 +53,7 @@
           "year": "2025"
         },
         {
-          "id": "b-1772048945223-hz42zyuf9",
+          "id": "b-1772077963301-v3sdjchj7",
           "type": "publication",
           "title": "A scoping review of fire safety on building construction sites: current measures, practices and future research directions",
           "link": "https://doi.org/10.1108/ecam-11-2024-1519",
@@ -62,7 +62,7 @@
           "year": "2025"
         },
         {
-          "id": "b-1772048945223-cj7gacz57",
+          "id": "b-1772077963301-62e6zca67",
           "type": "publication",
           "title": "Exploring Fire Safety Challenges on Construction Sites: Insights from Stakeholders",
           "link": "https://doi.org/10.7771/3067-4883.1242",
@@ -71,7 +71,7 @@
           "year": "2025"
         },
         {
-          "id": "b-1772048945223-b4qk2d3lf",
+          "id": "b-1772077963301-1j4v5q255",
           "type": "publication",
           "title": "A Fuzzy Expert System for Measuring the Degree of Lean Implementation in Construction Projects",
           "link": "https://doi.org/10.24928/2024/0159",
@@ -80,7 +80,7 @@
           "year": "2024"
         },
         {
-          "id": "b-1772048945223-l1bs2yekg",
+          "id": "b-1772077963301-qan0rxc4u",
           "type": "publication",
           "title": "The Analysis of Construction Workplace Incident Fatalities Using Text Mining and Classification Techniques",
           "link": "https://doi.org/10.1007/978-3-031-61503-0_12",
@@ -96,7 +96,7 @@
       "title": "Project",
       "blocks": [
         {
-          "id": "b-1772048945223-tczhijyn5",
+          "id": "b-1772077963301-0t74cneib",
           "type": "project",
           "title": "Optimization Algorithm Based on Subset Simulation for Resource Leveling Problem with  Multiple Resources (2019-2021)",
           "link": "",
@@ -105,7 +105,7 @@
           "imageWidth": 300
         },
         {
-          "id": "b-1772048945223-cb4iju4bx",
+          "id": "b-1772077963301-pj2vdirup",
           "type": "project",
           "title": "Evacuation Simulation for a High-Speed Railway Station During Construction (2017)",
           "link": "",
@@ -114,7 +114,7 @@
           "imageWidth": 300
         },
         {
-          "id": "b-1772048945224-ydfcp0qtr",
+          "id": "b-1772077963301-rbb3ua9at",
           "type": "project",
           "title": "Bentley Institute Student Design - (2016)",
           "link": "",
@@ -130,7 +130,7 @@
       "title": "Teaching",
       "blocks": [
         {
-          "id": "b-1772048945224-6l3dg2bfp",
+          "id": "b-1772077963301-ryurwejqk",
           "type": "project",
           "title": "CIV E 265 - Engineering Drawing and Computer Graphics",
           "link": "",
@@ -139,7 +139,7 @@
           "imageWidth": 160
         },
         {
-          "id": "b-1772048945224-lqhdsvwq6",
+          "id": "b-1772077963301-hiohh617y",
           "type": "project",
           "title": "CIV E 601 - Analytical Methods for Project Management ",
           "link": "",
@@ -148,7 +148,7 @@
           "imageWidth": 160
         },
         {
-          "id": "b-1772048945224-6x43ktwtd",
+          "id": "b-1772077963301-p6hz25640",
           "type": "project",
           "title": "CIV E 409 - Construction Methods",
           "link": "",
