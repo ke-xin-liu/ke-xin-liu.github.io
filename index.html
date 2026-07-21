@@ -1,4 +1,14 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Kexin Liu</title><style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kexin Liu</title>
+  <meta name="description" content="Kexin Liu personal website">
+  <meta property="og:title" content="Kexin Liu">
+  <meta property="og:description" content="Kexin Liu personal website">
+  <meta property="og:type" content="website">
+  <style>
       :root { 
         --bg: #fafafa; 
         --text: #1c1917; 
@@ -12,6 +22,7 @@
         color: var(--text); 
         line-height: 1.6;
       }
+      body * { font-family: inherit !important; }
       
       /* Navigation */
       .navbar {
@@ -23,7 +34,6 @@
         top: 0;
         background: var(--bg);
         z-index: 100;
-        border-bottom: 1px solid rgba(0,0,0,0.05);
       }
       .nav-link { 
         color: #57534e; 
@@ -43,8 +53,8 @@
       /* Hero Section */
       .hero {
         max-width: 900px;
-        margin: 4rem auto;
-        padding: 0 2rem;
+        margin: 4rem 0;
+        padding: 0;
         display: flex;
         align-items: center;
         gap: 4rem;
@@ -76,13 +86,6 @@
         color: #78716c;
         margin: 0 0 1rem 0;
       }
-      .hero-bio {
-        color: #57534e;
-        font-size: 1.1rem;
-        max-width: 600px;
-        white-space: pre-wrap;
-        margin-bottom: 1.5rem;
-      }
       .contact-links {
         display: flex;
         gap: 1rem;
@@ -106,7 +109,10 @@
         transform: translateY(-2px);
       }
       .contact-name {
-        text-transform: capitalize;
+        white-space: nowrap;
+      }
+      .profile-keywords {
+        margin-top: 1rem;
       }
 
       /* Blocks */
@@ -114,14 +120,14 @@
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
-        margin: 2rem 0;
+        margin: 0;
       }
       .keyword-tag {
         background: var(--accent);
         color: white;
         padding: 0.25rem 0.75rem;
         border-radius: 9999px;
-        font-size: 0.85rem;
+        font-size: 0.85em;
         font-weight: 500;
       }
 
@@ -134,6 +140,7 @@
       
       .content-section { display: none; animation: fadeIn 0.3s ease; }
       .content-section.active { display: block; }
+      .plain-section { padding-top: 4rem; }
       @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
       
       h1, h2, h3 { margin-top: 2rem; margin-bottom: 1rem; }
@@ -147,128 +154,361 @@
       a:hover { text-decoration: underline; }
       
       /* Block Styles */
-      .block-image { margin: 2rem 0; }
-      .block-image figcaption { color: #78716c; font-size: 0.9rem; margin-top: 0.5rem; text-align: center; }
-      .block-publication { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e7e5e4; }
-      .pub-title { font-weight: 600; font-size: 1.1rem; }
+      .generated-block { margin-top: 0; }
+      .generated-content-block { font-size: calc(1em * var(--section-font-scale, 1)); }
+      .generated-content-block h1 { font-size: 2em; }
+      .generated-content-block h2 { font-size: 1.5em; }
+      .generated-content-block h3 { font-size: 1.25em; }
+      .block-image { margin: 0; }
+      .block-subsection { color: var(--accent); margin-top: 0; margin-bottom: 0; }
+      .block-image figcaption { color: #78716c; font-size: 0.9em; margin-top: 0.5rem; text-align: center; }
+      .block-publication { margin-bottom: 0; padding-bottom: 1.5rem; border-bottom: 1px solid #e7e5e4; }
+      .pub-title { font-weight: 600; font-size: 1.1em; }
       .pub-authors { color: #44403c; margin-top: 0.25rem; }
-      .pub-meta { color: #78716c; font-size: 0.9rem; margin-top: 0.25rem; }
+      .pub-meta { color: #78716c; font-size: 0.9em; margin-top: 0.25rem; }
       
-      .block-project { display: flex; gap: 1.5rem; margin-bottom: 2rem; align-items: start; }
-      .proj-img { object-fit: cover; border-radius: 8px; flex-shrink: 0; }
-      .proj-title { font-weight: 600; margin-bottom: 0.25rem; font-size: 1.1rem; }
-      .proj-desc { color: #57534e; font-size: 1rem; line-height: 1.5; }
+      .block-project { display: flex; gap: 1.5rem; margin-bottom: 0; align-items: start; }
+      .proj-img { width: 160px; height: 100px; object-fit: cover; border-radius: 8px; }
+      .proj-title, .proj-title *, .proj-desc, .proj-desc * { font-family: inherit !important; }
+      .proj-title { font-weight: 600; margin-bottom: 0.25rem; font-size: 1.1em; }
+      .proj-desc { color: #57534e; font-size: 1em; line-height: 1.5; }
+      .proj-desc p { margin: 0 0 0.35rem; }
+      .proj-desc p:last-child { margin-bottom: 0; }
+      .proj-desc ul { list-style-type: disc; margin: 0.25rem 0; padding-left: 1.25rem; }
+      .proj-desc ol { list-style-type: decimal; margin: 0.25rem 0; padding-left: 1.25rem; }
+      .proj-desc li { display: list-item; margin: 0.1rem 0; }
+      .proj-desc strong, .proj-desc b { font-weight: 600; }
+      .block-news { border: 0; }
+      .news-row { display: flex; gap: 0.5rem; padding: 0.18rem 0; align-items: flex-start; }
+      .news-main { min-width: 0; flex: 1; }
+      .news-text { font-size: 1em; line-height: 1.6; font-weight: 400; }
+      .news-text p { margin: 0; }
+      .news-text ul, .news-text ol { margin-top: 0.25rem; margin-bottom: 0.25rem; }
+      .news-date { flex-shrink: 0; width: 5rem; color: #78716c; font-size: 0.8em; font-weight: 600; padding-top: 0.2rem; text-align: left; }
+
+      /* Blog */
+      .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
+      .blog-card { border: 1px solid #e7e5e4; border-radius: 8px; overflow: hidden; background: rgba(255,255,255,0.72); }
+      .blog-card-cover { display: block; width: 100%; height: 180px; object-fit: cover; border-radius: 0; }
+      .blog-card-body { padding: 1rem; }
+      .blog-card-date { color: #78716c; font-size: 0.85rem; margin-bottom: 0.35rem; }
+      .blog-card h3 { margin: 0 0 0.5rem 0; font-size: 1.15rem; line-height: 1.3; }
+      .blog-card p { color: #57534e; margin: 0.5rem 0 0.75rem; }
+      .blog-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+      .blog-tag { border: 1px solid #e7e5e4; border-radius: 9999px; color: #57534e; font-size: 0.8rem; padding: 0.15rem 0.55rem; }
+      .blog-image { margin: 2rem auto; clear: both; }
+      .blog-image-small { max-width: 320px; }
+      .blog-image-medium { max-width: 640px; }
+      .blog-image-full { max-width: 100%; }
+      .blog-image-left { margin-left: 0; margin-right: auto; }
+      .blog-image-right { margin-left: auto; margin-right: 0; }
+      .blog-image img { width: 100%; }
+      .blog-image figcaption { color: #78716c; font-size: 0.9rem; margin-top: 0.5rem; text-align: center; }
+      
+      .site-footer {
+        color: #78716c;
+        font-size: 0.9rem;
+        margin: 2rem auto 0;
+        max-width: 900px;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      
+      .back-to-top {
+        position: fixed;
+        right: 1.25rem;
+        bottom: 1.25rem;
+        z-index: 120;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        border: 1px solid #e7e5e4;
+        border-radius: 9999px;
+        background: rgba(255,255,255,0.96);
+        color: #44403c;
+        box-shadow: 0 12px 30px rgba(28,25,23,0.12);
+        cursor: pointer;
+        font: inherit;
+        font-size: 0.9rem;
+        font-weight: 600;
+        opacity: 0;
+        padding: 0.55rem 0.8rem;
+        pointer-events: none;
+        transform: translateY(8px);
+        transition: opacity 0.2s ease, transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+      }
+      .back-to-top.visible {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+      .back-to-top:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+      @media (max-width: 640px) {
+        .back-to-top {
+          right: 1rem;
+          bottom: 1rem;
+        }
+      }
+
 
       @media (max-width: 768px) {
         .hero { flex-direction: column; text-align: center; gap: 2rem; margin: 2rem auto; }
         .block-project { flex-direction: column; }
         .proj-img { width: 100%; height: 200px; }
         .navbar { gap: 1rem; flex-wrap: wrap; }
+        .news-row { flex-direction: column; gap: 0.25rem; }
+        .news-date { order: -1; text-align: left; }
       }
-    </style></head><body><nav class="navbar"><a href="#1" class="nav-link" onclick="showSection('1')">Home</a>
-<a href="#2" class="nav-link" onclick="showSection('2')">Research</a>
-<a href="#1771979629025" class="nav-link" onclick="showSection('1771979629025')">Project</a>
-<a href="#1771979693724" class="nav-link" onclick="showSection('1771979693724')">Teaching</a></nav><header class="hero"><img src="https://avatars.githubusercontent.com/u/190426906?v=4" class="hero-avatar" alt="Profile"><div class="hero-content"><h1 class="hero-name">Kexin Liu</h1><div class="hero-title">PhD Candidate</div><div class="hero-affiliation">University of Alberta</div><div class="hero-bio"></div><div class="contact-links"><a href="https://www.linkedin.com/in/kexin-liu-425035200" target="_blank" class="contact-link">
-        <span class="contact-name">linkedin</span>
-      </a></div></div></header><main class="main-content">
-        <section id="1" class="content-section active">
-          <h1>Hello</h1>
-<p><span style="color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;">I'm currently a PhD candidate at the University of Alberta. My research focuses on using digital twin-based Extended Reality (VR, AR, and MR) to enhance fire safety management on construction sites, reducing construction workers' injuries and deaths, and property loss.</span></p>
-<div class="block-keywords"><span class="keyword-tag">VR</span><span class="keyword-tag">Construction Safety</span><span class="keyword-tag">Digital Twin</span><span class="keyword-tag">BIM</span><span class="keyword-tag">Optimization</span></div>
-<p><br></p>
-<p><br></p>
-<p><br></p>
+    </style>
+</head>
+<body>
+  <nav class="navbar"><a href="#section-0-imported-0" class="nav-link active" onclick="showSection('section-0-imported-0', event)">Home</a>
+<a href="#section-1-imported-1" class="nav-link" onclick="showSection('section-1-imported-1', event)">Publication</a>
+<a href="#section-2-imported-3" class="nav-link" onclick="showSection('section-2-imported-3', event)">Activity</a></nav>
+  <main class="main-content">
+        <section id="section-0-imported-0" class="content-section home-section active">
+          
+          <header class="hero">
+            <img src="https://avatars.githubusercontent.com/u/190426906?v=4" class="hero-avatar" alt="Profile">
+            <div class="hero-content">
+              <h1 class="hero-name">Kexin Liu</h1>
+              <div class="hero-title">PhD Candidate</div>
+              <div class="hero-affiliation">University of Alberta</div>
+              <div class="contact-links"><a href="https://www.linkedin.com/in/kexin-liu-425035200" target="_blank" rel="noopener noreferrer" class="contact-link">
+        <span class="contact-name">LinkedIn</span>
+      </a><a href="https://scholar.google.ca/citations?user=-uwCHPoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="contact-link">
+        <span class="contact-name">Google Scholar</span>
+      </a></div>
+              <div class="profile-keywords block-keywords"><span class="keyword-tag">VR</span><span class="keyword-tag">Construction Safety</span><span class="keyword-tag">Digital Twin</span><span class="keyword-tag">BIM</span><span class="keyword-tag">Optimization</span></div>
+            </div>
+          </header>
+          <div class="generated-block generated-content-block" style="margin-bottom:32px;--section-font-scale:1"><h1><span style="color: rgb(5, 5, 5); white-space-collapse: preserve; font-size: 16px;">Hi there! Nice to e-meet you.</span><span style="font-size: 10pt;"></span></h1><p><span style="white-space-collapse: preserve; color: rgb(5, 5, 5);">I’m a PhD candidate working at the intersection of construction safety, immersive VR, and eye tracking. I’m interested in how digital technologies can help us better understand and improve safety training.</span></p><p>Happy to connect, share experiences, and discuss ideas.<span style="white-space-collapse: preserve; color: rgb(5, 5, 5);"></span></p></div>
+<div class="generated-block generated-section-block generated-content-block" style="margin-bottom:8px;--section-font-scale:1"><h2 class="block-subsection"><div><span style="font-weight: normal;"><br></span></div><span style="font-weight: normal;">News</span></h2></div>
+<div class="generated-block generated-content-block" style="margin-bottom:12px;--section-font-scale:1">
+            <div class="block-news">
+              <div class="news-row">
+                <time class="news-date"><span style="font-size: 10pt;"><span style="font-size: 11pt;">Jun 2026</span></span></time>
+                <div class="news-main">
+                  <div class="news-text"><span>Grateful to present two recent studies at the ISARC 2026–IGLC 34 Joint Conference in Singapore 🎤</span></div>
+                </div>
+              </div>
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:12px;--section-font-scale:1">
+            <div class="block-news">
+              <div class="news-row">
+                <time class="news-date"><span style="font-size: 11pt;">Sep 2025</span></time>
+                <div class="news-main">
+                  <div class="news-text"><span>Happy to join Lab2Market as an Entrepreneurial Lead and explore how research ideas can move toward real-world impact💡</span></div>
+                </div>
+              </div>
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:12px;--section-font-scale:1">
+            <div class="block-news">
+              <div class="news-row">
+                <time class="news-date"><span style="font-size: 11pt;">Sep 2025</span></time>
+                <div class="news-main">
+                  <div class="news-text"><span>Honored to receive the Alberta Graduate Excellence Scholarship 🎉</span></div>
+                </div>
+              </div>
+            </div></div>
+<div class="generated-block generated-section-block generated-content-block" style="margin-bottom:8px;--section-font-scale:1"><h2 class="block-subsection"><div><br></div><span style="font-weight: normal;">Research Projects</span></h2></div>
+<div class="generated-block generated-content-block" style="margin-bottom:32px;--section-font-scale:1">
+            <div class="block-project">
+              
+              <div class="proj-content">
+                <div class="proj-title"><br></div>
+                <div class="proj-desc"></div>
+              </div>
+            </div></div>
+<div class="generated-block generated-section-block generated-content-block" style="margin-bottom:8px;--section-font-scale:1"><h2 class="block-subsection"><div><span style="font-weight: normal;"><br></span></div><span style="font-weight: 400;">Selected Previous Project Experience</span></h2></div>
+<div class="generated-block generated-content-block" style="margin-bottom:32px;--section-font-scale:1">
+            <div class="block-project">
+              <img src="https://ke-xin-liu.github.io/assets/proj-b-1772042226350-6rltrb6yp.png" class="proj-img" alt="Optimization Algorithm Based on Subset Simulation for Resource Leveling Problem with Multiple Resources (2019-2021)">
+              <div class="proj-content">
+                <div class="proj-title"><span style="font-size: 14pt;"><span style="font-size: 11pt;"><span style="font-size: 12pt;"><span style="font-size: 13pt; color: rgb(35, 33, 31); font-weight: normal;">Optimization Algorithm Based on Subset Simulation for Resource Leveling Problem with Multiple Resources (2019-2021)</span></span></span></span></div>
+                <div class="proj-desc"><ul><li><span style="font-size: 11pt;"><span style="font-size: 10pt;"><span style="font-size: 10pt;"><span style="font-size: 11pt; color: rgb(0, 0, 0);"><span data-path-to-node="1,0,0" data-index-in-node="0">Model Reformation:</span> Introduced interval rate variables to the Resource Leveling Problem, eliminating the need for complex repair operators.</span></span></span></span></li><li><span style="font-size: 11pt;"><span style="font-size: 10pt;"><span style="font-size: 10pt;"><span style="font-size: 11pt; color: rgb(0, 0, 0);"><span data-path-to-node="1,1,0" data-index-in-node="0">Performance Benchmarking:</span> Validated the proposed algorithm in MATLAB, achieving higher stability and solution optimality than traditional Genetic Algorithms.</span></span></span></span></li><li><span style="font-size: 11pt;"><span style="font-size: 10pt;"><span style="font-size: 10pt;"><span style="font-size: 11pt; color: rgb(0, 0, 0);"><span data-path-to-node="1,2,0" data-index-in-node="0">Application Development:</span> Developed a MATLAB GUI to streamline the optimization process for end-users.</span></span></span></span></li></ul></div>
+              </div>
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:32px;--section-font-scale:1">
+            <div class="block-project">
+              <img src="https://ke-xin-liu.github.io/assets/proj-1771981795128.png" class="proj-img" alt="Evacuation Simulation for a High-Speed Railway Station During Construction (2017)">
+              <div class="proj-content">
+                <div class="proj-title"><span style="color: rgb(37, 34, 34); font-weight: normal;">Evacuation Simulation for a High-Speed Railway Station During Construction (2017)</span></div>
+                <div class="proj-desc"><ul><li><span style="font-size: 11pt; color: rgb(0, 0, 0);"><span data-path-to-node="1,0,0" data-index-in-node="0">BIM-Evacuation Modeling:</span> Integrated BIM data into Pathfinder for mixed-flow worker and passenger simulations.</span></li><li><span style="font-size: 11pt; color: rgb(0, 0, 0);"><span data-path-to-node="1,1,0" data-index-in-node="0">Scenario Evaluation:</span> Analyzed emergency bottlenecks and flow inefficiencies under stair blockage and guided scenarios.</span></li><li><span data-path-to-node="1,2,0" data-index-in-node="0" style="color: rgb(0, 0, 0); font-size: 11pt;">Efficiency Optimization:</span><span style="color: rgb(0, 0, 0); font-size: 11pt;"> Reduced evacuation time by 23.7s, supporting data-driven safety planning.</span></li></ul><span style="font-size: 11pt; color: rgb(0, 0, 0);"></span></div>
+              </div>
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:0px;--section-font-scale:1">
+            <div class="block-project">
+              <img src="https://ke-xin-liu.github.io/assets/proj-b-1772079422250-2cz9veeym.png?v=1772079435347" class="proj-img" alt="Bentley Institute Student Design (2016)">
+              <div class="proj-content">
+                <div class="proj-title"><span style="color: rgb(45, 43, 42); font-weight: normal;">Bentley Institute Student Design (2016)</span></div>
+                <div class="proj-desc"><ul><li><span style="font-size: 11pt;"><span data-path-to-node="1,0,0" data-index-in-node="0">UAV Data Acquisition:</span> Captured high-resolution aerial imagery for reconstruction.</span></li><li><span style="font-size: 11pt;"><span data-path-to-node="1,1,0" data-index-in-node="0">3D Reconstruction:</span> Used <span data-path-to-node="1,1,0" data-index-in-node="24">Bentley ContextCapture</span> to perform aerial triangulation and generate high-fidelity mesh models.</span></li><li><span style="font-size: 11pt;"><span data-path-to-node="1,2,0" data-index-in-node="0">VR Integration:</span> Used <span data-path-to-node="1,2,0" data-index-in-node="21">Bentley LumenRT</span> to develop virtual reality scenes based on the 3D reconstruction model.</span></li></ul></div>
+              </div>
+            </div></div>
         </section>
       
 
-        <section id="2" class="content-section ">
-          <p><br></p>
-<h2><b><font size="5">Publications</font></b></h2>
-
+        <section id="section-1-imported-1" class="content-section plain-section ">
+          
+          <div class="generated-block generated-content-block" style="margin-bottom:0px;--section-font-scale:0.95">
             <div class="block-publication">
-              <div class="pub-title"><a href="https://doi.org/10.22260/isarc2025/0139" target="_blank">Developing a Digital Twin-based Framework for Construction Fire Hazard Recognition Training</a></div>
-              <div class="pub-authors">Kexin Liu, Mohamed Sabek, Gaang Lee, Max Kinateder, Vicente A. Gonzalez</div>
+              <div class="pub-title"><a href="https://doi.org/10.22260/ISARC2026/0125" target="_blank" rel="noopener noreferrer"><span style="font-size: 11pt;"><span style="font-size: 12pt;"><span style="font-size: 12pt;"><span style="font-size: 14pt;"><span style="font-size: 13pt;">Toward Understanding Fire Hazard Recognition in Construction: An immersive VR and Eye-Tracking Pilot Study</span></span></span></span></span></a></div>
+              <div class="pub-authors"><strong>Kexin Liu</strong>, Gaang Lee, Max Kinateder, Vicente A. Gonzalez</div>
+              <div class="pub-meta">Proceedings of the International Symposium on Automation and Robotics in Construction (IAARC) 2026</div>
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:0px;--section-font-scale:0.95">
+            <div class="block-publication">
+              <div class="pub-title"><a href="https://doi.org/10.22260/ISARC2026/0249" target="_blank" rel="noopener noreferrer">A VLM-Driven Workflow for Generating Context-Specific Fire Hazards for VR Construction Safety Training</a></div>
+              <div class="pub-authors"><strong>Kexin Liu</strong>, Mohamed Sabek, Gaang Lee, Max Kinateder, Vicente A. Gonzalez</div>
+              <div class="pub-meta">Proceedings of the International Symposium on Automation and Robotics in Construction (IAARC) 2026</div>
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:0px;--section-font-scale:0.95">
+            <div class="block-publication">
+              <div class="pub-title"><a href="https://doi.org/10.22260/isarc2025/0139" target="_blank" rel="noopener noreferrer">Developing a Digital Twin-based Framework for Construction Fire Hazard Recognition Training</a></div>
+              <div class="pub-authors"><strong>Kexin Liu</strong>, Mohamed Sabek, Gaang Lee, Max Kinateder, Vicente A. Gonzalez</div>
               <div class="pub-meta">Proceedings of the International Symposium on Automation and Robotics in Construction (IAARC) 2025</div>
-            </div>
-
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:0px;--section-font-scale:0.95">
             <div class="block-publication">
-              <div class="pub-title"><a href="https://doi.org/10.1108/ecam-11-2024-1519" target="_blank">A scoping review of fire safety on building construction sites: current measures, practices and future research directions</a></div>
-              <div class="pub-authors">Kexin Liu, Vicente A. Gonzalez, Gaang Lee, Max Kinateder</div>
+              <div class="pub-title"><a href="https://doi.org/10.1108/ecam-11-2024-1519" target="_blank" rel="noopener noreferrer">A scoping review of fire safety on building construction sites: current measures, practices and future research directions</a></div>
+              <div class="pub-authors"><strong>Kexin Liu</strong>, Vicente A. Gonzalez, Gaang Lee, Max Kinateder</div>
               <div class="pub-meta">Engineering, Construction and Architectural Management 2025</div>
-            </div>
-
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:0px;--section-font-scale:0.95">
             <div class="block-publication">
-              <div class="pub-title"><a href="https://doi.org/10.7771/3067-4883.1242" target="_blank">Exploring Fire Safety Challenges on Construction Sites: Insights from Stakeholders</a></div>
-              <div class="pub-authors">Kexin Liu, Gaang Lee, Max Kinateder, Vicente A. Gonzalez</div>
+              <div class="pub-title"><a href="https://doi.org/10.7771/3067-4883.1242" target="_blank" rel="noopener noreferrer">Exploring Fire Safety Challenges on Construction Sites: Insights from Stakeholders</a></div>
+              <div class="pub-authors"><strong>Kexin Liu</strong>, Gaang Lee, Max Kinateder, Vicente A. Gonzalez</div>
               <div class="pub-meta">CIB Conferences 2025</div>
-            </div>
-
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:0px;--section-font-scale:0.95">
             <div class="block-publication">
-              <div class="pub-title"><a href="https://doi.org/10.24928/2024/0159" target="_blank">A Fuzzy Expert System for Measuring the Degree of Lean Implementation in Construction Projects</a></div>
-              <div class="pub-authors">Rana Ead, Kexin Liu, Amira Saleh, Sena Assaf, Vicente Gonzalez-Moret, Farook Hamzeh</div>
+              <div class="pub-title"><a href="https://doi.org/10.24928/2024/0159" target="_blank" rel="noopener noreferrer">A Fuzzy Expert System for Measuring the Degree of Lean Implementation in Construction Projects</a></div>
+              <div class="pub-authors">Rana Ead, <strong>Kexin Liu</strong>, Amira Saleh, Sena Assaf, Vicente Gonzalez-Moret, Farook Hamzeh</div>
               <div class="pub-meta">Annual Conference of the International Group for Lean Construction 2024</div>
-            </div>
-
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:0px;--section-font-scale:0.95">
             <div class="block-publication">
-              <div class="pub-title"><a href="https://doi.org/10.1007/978-3-031-61503-0_12" target="_blank">The Analysis of Construction Workplace Incident Fatalities Using Text Mining and Classification Techniques</a></div>
-              <div class="pub-authors">Sena Assaf, Kexin Liu, Zeyu Mao, Amira Saleh, Abbey Abellanosa, Yasser Mohamed</div>
+              <div class="pub-title"><a href="https://doi.org/10.1007/978-3-031-61503-0_12" target="_blank" rel="noopener noreferrer">The Analysis of Construction Workplace Incident Fatalities Using Text Mining and Classification Techniques</a></div>
+              <div class="pub-authors">Sena Assaf, <strong>Kexin Liu</strong>, Zeyu Mao, Amira Saleh, Abbey Abellanosa, Yasser Mohamed</div>
               <div class="pub-meta">Lecture Notes in Civil Engineering 2024</div>
-            </div>
+            </div></div>
         </section>
       
 
-        <section id="1771979629025" class="content-section ">
+        <section id="section-2-imported-3" class="content-section plain-section ">
           
+          <div class="generated-block generated-section-block generated-content-block" style="margin-bottom:8px;--section-font-scale:1"><h2 class="block-subsection"><span style="font-weight: normal;">Teaching</span></h2></div>
+<div class="generated-block generated-content-block" style="margin-bottom:8px;--section-font-scale:0.9">
             <div class="block-project">
-              <img src="https://ke-xin-liu.github.io/assets/proj-b-1772042226350-6rltrb6yp.png" class="proj-img" style="width: 300px; height: auto;" alt="Optimization Algorithm Based on Subset Simulation for Resource Leveling Problem with  Multiple Resources (2019-2021)">
+              
               <div class="proj-content">
-                <div class="proj-title">Optimization Algorithm Based on Subset Simulation for Resource Leveling Problem with  Multiple Resources (2019-2021)</div>
-                <div class="proj-desc"><b data-path-to-node="1,0,0" data-index-in-node="0">Model Reformation:</b> Introduced interval rate variables to the Resource Leveling Problem, eliminating the need for complex repair operators.<br><b data-path-to-node="1,1,0" data-index-in-node="0">Performance Benchmarking:</b> Validated the proposed algorithm in MATLAB, achieving higher stability and solution optimality than traditional Genetic Algorithms.<br><b data-path-to-node="1,2,0" data-index-in-node="0">Application Development:</b> Developed a MATLAB GUI to streamline the optimization process for end-users.</div>
+                <div class="proj-title"><span style="font-weight: normal;">CIV E 265 - Engineering Drawing and Computer Graphics</span></div>
+                <div class="proj-desc"><span style="color: rgb(87, 83, 78);">Revit Lab instructor - Fall 2023/2024/202</span><span style="color: rgb(87, 83, 78); font-size: 11pt;">5</span></div>
               </div>
-            </div>
-
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:8px;--section-font-scale:0.9">
             <div class="block-project">
-              <img src="https://ke-xin-liu.github.io/assets/proj-1771981795128.png" class="proj-img" style="width: 300px; height: auto;" alt="Evacuation Simulation for a High-Speed Railway Station During Construction (2017)">
+              
               <div class="proj-content">
-                <div class="proj-title">Evacuation Simulation for a High-Speed Railway Station During Construction (2017)</div>
-                <div class="proj-desc"><b data-path-to-node="1,0,0" data-index-in-node="0">BIM-Evacuation Modeling:</b> Integrated BIM data into Pathfinder for mixed-flow worker and passenger simulations.<br><b data-path-to-node="1,1,0" data-index-in-node="0">Scenario Evaluation:</b> Analyzed emergency bottlenecks and flow inefficiencies under stair blockage and guided scenarios.<br><b data-path-to-node="1,2,0" data-index-in-node="0">Efficiency Optimization:</b> Reduced evacuation time by 23.7s, supporting data-driven safety planning.</div>
+                <div class="proj-title"><span style="font-weight: normal;">CIV E 601 - Analytical Methods for Project Management</span></div>
+                <div class="proj-desc"><span style="color: rgba(0, 0, 0, 0.9); white-space: pre-wrap;">Teaching Assistant - Fall 2024</span></div>
               </div>
-            </div>
-
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:8px;--section-font-scale:0.9">
             <div class="block-project">
-              <img src="assets/proj-b-1772079422250-2cz9veeym.png?v=1772079435347" class="proj-img" style="width: 300px; height: auto;" alt="Bentley Institute Student Design - (2016)">
+              
               <div class="proj-content">
-                <div class="proj-title">Bentley Institute Student Design - (2016)</div>
-                <div class="proj-desc"><b><span data-path-to-node="1,0,0" data-index-in-node="0">UAV Data Acquisition:</span> </b>Captured high-resolution aerial imagery for reconstruction.<br><span data-path-to-node="1,1,0" data-index-in-node="0"><b>3D Reconstruction:</b></span> Used <span data-path-to-node="1,1,0" data-index-in-node="24">Bentley ContextCapture</span> to perform aerial triangulation and generate high-fidelity mesh models.<br><span data-path-to-node="1,2,0" data-index-in-node="0"><b>VR Integration:</b></span> Used <span data-path-to-node="1,2,0" data-index-in-node="21">Bentley LumenRT</span> to develop virtual reality scenes based on the 3D reconstruction model.</div>
+                <div class="proj-title"><span style="font-weight: normal;">CIV E 409 - Construction Methods</span></div>
+                <div class="proj-desc"><span style="white-space: pre-wrap; color: rgba(0, 0, 0, 0.9);">Teaching Assistant </span><span style="color: rgb(87, 83, 78);">- Winter 2024</span></div>
               </div>
-            </div>
+            </div></div>
+<div class="generated-block generated-section-block generated-content-block" style="margin-bottom:0px;--section-font-scale:1"><h2 class="block-subsection"><div><br></div><span style="font-weight: normal;">Selected Awards</span></h2></div>
+<div class="generated-block generated-content-block" style="margin-bottom:0px;--section-font-scale:1">
+            <div class="block-news">
+              <div class="news-row">
+                <time class="news-date"><span style="font-size: 11pt;">2025</span></time>
+                <div class="news-main">
+                  <div class="news-text"><span><span lang="EN-US" style="font-size: 11pt;">Alberta Graduate Excellence Scholarship</span></span></div>
+                </div>
+              </div>
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:0px;--section-font-scale:1">
+            <div class="block-news">
+              <div class="news-row">
+                <time class="news-date"><span style="font-size: 11pt;">2025</span></time>
+                <div class="news-main">
+                  <div class="news-text"><span>Joseph D Thompson/Zurich Canada Graduate Award in Construction Engineering and Management</span></div>
+                </div>
+              </div>
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:0px;--section-font-scale:1">
+            <div class="block-news">
+              <div class="news-row">
+                <time class="news-date"><span style="font-size: 11pt;">2024</span></time>
+                <div class="news-main">
+                  <div class="news-text"><span>Alberta Graduate Excellence Scholarship<span style="white-space:pre">	</span></span></div>
+                </div>
+              </div>
+            </div></div>
+<div class="generated-block generated-content-block" style="margin-bottom:0px;--section-font-scale:1">
+            <div class="block-news">
+              <div class="news-row">
+                <time class="news-date"><span style="font-size: 11pt;">2023</span></time>
+                <div class="news-main">
+                  <div class="news-text"><span>Dr Ayesha Khatun Memorial Graduate Award for Women in Civil Engineering</span></div>
+                </div>
+              </div>
+            </div></div>
         </section>
-      
+      </main>
+  <footer class="site-footer">© 2026 Kexin Liu. All rights reserved.</footer>
+  
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
+    <span aria-hidden="true">&uarr;</span>
+    <span>Top</span>
+  </button>
+  <script>
+    function showSection(id, event) {
+      const section = document.getElementById(id);
+      if (!section) return;
+      document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));
+      section.classList.add('active');
+      document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
+      if (event && event.currentTarget) {
+        event.currentTarget.classList.add('active');
+      } else {
+        const link = document.querySelector('.nav-link[href="#' + id + '"]');
+        if (link) link.classList.add('active');
+      }
+    }
 
-        <section id="1771979693724" class="content-section ">
-          
-            <div class="block-project">
-              
-              <div class="proj-content">
-                <div class="proj-title">CIV E 265 - Engineering Drawing and Computer Graphics</div>
-                <div class="proj-desc">Revit Lab instructor&nbsp;- Fall 2023/2024/202<span style="font-size: 11pt;">5</span></div>
-              </div>
-            </div>
+    window.addEventListener('DOMContentLoaded', function () {
+      const hashId = window.location.hash ? window.location.hash.slice(1) : '';
+      if (hashId && document.getElementById(hashId)) showSection(hashId);
+    });
+    
+    (function () {
+      const button = document.getElementById('back-to-top');
+      if (!button) return;
 
-            <div class="block-project">
-              
-              <div class="proj-content">
-                <div class="proj-title">CIV E 601 - Analytical Methods for Project Management </div>
-                <div class="proj-desc"><span style="color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;">Teaching Assistant - Fall 2024</span></div>
-              </div>
-            </div>
+      function updateBackToTop() {
+        const doc = document.documentElement;
+        const hasScrollableContent = doc.scrollHeight > window.innerHeight + 120;
+        button.classList.toggle('visible', hasScrollableContent && window.scrollY > 180);
+      }
 
-            <div class="block-project">
-              
-              <div class="proj-content">
-                <div class="proj-title">CIV E 409 - Construction Methods</div>
-                <div class="proj-desc">&nbsp;<span style="color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;">Teaching Assistant </span>- Winter 2024</div>
-              </div>
-            </div>
-        </section>
-      </main><script>function showSection(id){document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));event.target.classList.add('active');}</script></body></html>
+      button.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      window.addEventListener('scroll', updateBackToTop, { passive: true });
+      window.addEventListener('resize', updateBackToTop);
+      updateBackToTop();
+    })();
+
+  </script>
+</body>
+</html>

@@ -2,7 +2,7 @@
   "username": "Kexin Liu",
   "userTitle": "PhD Candidate",
   "affiliation": "University of Alberta",
-  "shortBio": "",
+  "shortBio": "Short bio",
   "repoName": "ke-xin-liu.github.io",
   "modules": [
     {
@@ -10,11 +10,6 @@
       "type": "home",
       "title": "Home",
       "blocks": [
-        {
-          "id": "imported-text-0-0",
-          "type": "text",
-          "content": "<h1>Hello</h1><p><span style=\"color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;\">I'm currently a PhD candidate at the University of Alberta. My research focuses on using digital twin-based Extended Reality (VR, AR, and MR) to enhance fire safety management on construction sites, reducing construction workers' injuries and deaths, and property loss.</span></p>"
-        },
         {
           "id": "imported-keywords-1",
           "type": "keywords",
@@ -25,18 +20,120 @@
             "BIM",
             "Optimization"
           ]
+        },
+        {
+          "id": "imported-text-0-0",
+          "type": "text",
+          "content": "<h1><span style=\"color: rgb(5, 5, 5); white-space-collapse: preserve; font-size: 16px;\">Hi there! Nice to e-meet you.</span><span style=\"font-size: 10pt;\"></span></h1><p><span style=\"white-space-collapse: preserve; color: rgb(5, 5, 5);\">I’m a PhD candidate working at the intersection of construction safety, immersive VR, and eye tracking. I’m interested in how digital technologies can help us better understand and improve safety training.</span></p><p>Happy to connect, share experiences, and discuss ideas.<span style=\"white-space-collapse: preserve; color: rgb(5, 5, 5);\"></span></p>"
+        },
+        {
+          "id": "1783586905101",
+          "type": "section",
+          "title": "<div><span style=\"font-weight: normal;\"><br></span></div><span style=\"font-weight: normal;\">News</span>",
+          "blockSpacing": 12,
+          "fontScale": 100
+        },
+        {
+          "id": "block-1c0f2ece-838f-4c2a-85d8-782d26e174d6-news-item-77e4feea-8ded-46a2-822e-959467192964",
+          "type": "news",
+          "date": "<span style=\"font-size: 10pt;\"><span style=\"font-size: 11pt;\">Jun 2026</span></span>",
+          "text": "Grateful to present two recent studies at the ISARC 2026–IGLC 34 Joint Conference in Singapore 🎤",
+          "category": "Conference",
+          "link": "",
+          "dateFontSize": "10pt"
+        },
+        {
+          "id": "block-1c0f2ece-838f-4c2a-85d8-782d26e174d6-news-item-ffa66e73-b9a6-49e2-b7d8-756c55ce9145",
+          "type": "news",
+          "date": "<span style=\"font-size: 11pt;\">Sep 2025</span>",
+          "text": "Happy to join Lab2Market as an Entrepreneurial Lead and explore how research ideas can move toward real-world impact💡",
+          "category": "Publication",
+          "link": "",
+          "dateFontSize": "10pt"
+        },
+        {
+          "id": "block-25e122cd-64c9-4495-a8c3-8f6c69bc1c43",
+          "type": "news",
+          "date": "<span style=\"font-size: 11pt;\">Sep 2025</span>",
+          "text": "Honored to receive the Alberta Graduate Excellence Scholarship 🎉",
+          "category": "",
+          "link": "",
+          "dateFontSize": "10pt"
+        },
+        {
+          "id": "block-abebbc77-a944-43a1-8438-3eec4ff18a8c",
+          "type": "section",
+          "title": "<div><br></div><span style=\"font-weight: normal;\">Research Projects</span>",
+          "blockSpacing": 32,
+          "fontScale": 100
+        },
+        {
+          "id": "block-07a1c8e7-1c43-49d1-9442-62051952e6a7",
+          "type": "project",
+          "title": "<br>",
+          "description": "",
+          "link": "",
+          "imageUrl": ""
+        },
+        {
+          "id": "1783580381430",
+          "type": "section",
+          "title": "<div><span style=\"font-weight: normal;\"><br></span></div><span style=\"font-weight: 400;\">Selected Previous Project Experience</span>",
+          "blockSpacing": 32,
+          "fontScale": 100
+        },
+        {
+          "id": "imported-project-0",
+          "type": "project",
+          "title": "<span style=\"font-size: 14pt;\"><span style=\"font-size: 11pt;\"><span style=\"font-size: 12pt;\"><span style=\"font-size: 13pt; color: rgb(35, 33, 31); font-weight: normal;\">Optimization Algorithm Based on Subset Simulation for Resource Leveling Problem with Multiple Resources (2019-2021)</span></span></span></span>",
+          "description": "<ul><li><span style=\"font-size: 11pt;\"><span style=\"font-size: 10pt;\"><span style=\"font-size: 10pt;\"><span style=\"font-size: 11pt; color: rgb(0, 0, 0);\"><span data-path-to-node=\"1,0,0\" data-index-in-node=\"0\">Model Reformation:</span> Introduced interval rate variables to the Resource Leveling Problem, eliminating the need for complex repair operators.</span></span></span></span></li><li><span style=\"font-size: 11pt;\"><span style=\"font-size: 10pt;\"><span style=\"font-size: 10pt;\"><span style=\"font-size: 11pt; color: rgb(0, 0, 0);\"><span data-path-to-node=\"1,1,0\" data-index-in-node=\"0\">Performance Benchmarking:</span> Validated the proposed algorithm in MATLAB, achieving higher stability and solution optimality than traditional Genetic Algorithms.</span></span></span></span></li><li><span style=\"font-size: 11pt;\"><span style=\"font-size: 10pt;\"><span style=\"font-size: 10pt;\"><span style=\"font-size: 11pt; color: rgb(0, 0, 0);\"><span data-path-to-node=\"1,2,0\" data-index-in-node=\"0\">Application Development:</span> Developed a MATLAB GUI to streamline the optimization process for end-users.</span></span></span></span></li></ul>",
+          "link": "",
+          "imageUrl": "https://ke-xin-liu.github.io/assets/proj-b-1772042226350-6rltrb6yp.png"
+        },
+        {
+          "id": "imported-project-1",
+          "type": "project",
+          "title": "<span style=\"color: rgb(37, 34, 34); font-weight: normal;\">Evacuation Simulation for a High-Speed Railway Station During Construction (2017)</span>",
+          "description": "<ul><li><span style=\"font-size: 11pt; color: rgb(0, 0, 0);\"><span data-path-to-node=\"1,0,0\" data-index-in-node=\"0\">BIM-Evacuation Modeling:</span> Integrated BIM data into Pathfinder for mixed-flow worker and passenger simulations.</span></li><li><span style=\"font-size: 11pt; color: rgb(0, 0, 0);\"><span data-path-to-node=\"1,1,0\" data-index-in-node=\"0\">Scenario Evaluation:</span> Analyzed emergency bottlenecks and flow inefficiencies under stair blockage and guided scenarios.</span></li><li><span data-path-to-node=\"1,2,0\" data-index-in-node=\"0\" style=\"color: rgb(0, 0, 0); font-size: 11pt;\">Efficiency Optimization:</span><span style=\"color: rgb(0, 0, 0); font-size: 11pt;\"> Reduced evacuation time by 23.7s, supporting data-driven safety planning.</span></li></ul><span style=\"font-size: 11pt; color: rgb(0, 0, 0);\"></span>",
+          "link": "",
+          "imageUrl": "https://ke-xin-liu.github.io/assets/proj-1771981795128.png"
+        },
+        {
+          "id": "imported-project-2",
+          "type": "project",
+          "title": "<span style=\"color: rgb(45, 43, 42); font-weight: normal;\">Bentley Institute Student Design (2016)</span>",
+          "description": "<ul><li><span style=\"font-size: 11pt;\"><span data-path-to-node=\"1,0,0\" data-index-in-node=\"0\">UAV Data Acquisition:</span> Captured high-resolution aerial imagery for reconstruction.</span></li><li><span style=\"font-size: 11pt;\"><span data-path-to-node=\"1,1,0\" data-index-in-node=\"0\">3D Reconstruction:</span> Used <span data-path-to-node=\"1,1,0\" data-index-in-node=\"24\">Bentley ContextCapture</span> to perform aerial triangulation and generate high-fidelity mesh models.</span></li><li><span style=\"font-size: 11pt;\"><span data-path-to-node=\"1,2,0\" data-index-in-node=\"0\">VR Integration:</span> Used <span data-path-to-node=\"1,2,0\" data-index-in-node=\"21\">Bentley LumenRT</span> to develop virtual reality scenes based on the 3D reconstruction model.</span></li></ul>",
+          "link": "",
+          "imageUrl": "https://ke-xin-liu.github.io/assets/proj-b-1772079422250-2cz9veeym.png?v=1772079435347"
         }
-      ]
+      ],
+      "blockSpacing": 32,
+      "fontScale": 100
     },
     {
       "id": "imported-1",
       "type": "custom",
-      "title": "Research",
+      "title": "Publication",
       "blocks": [
         {
-          "id": "imported-text-1-0",
-          "type": "text",
-          "content": "<p><br></p><h2><b><font size=\"5\">Publications</font></b></h2>"
+          "id": "block-faeb7f43-1da0-4cbd-bad3-139e05a1601e",
+          "type": "publication",
+          "title": "<span style=\"font-size: 11pt;\"><span style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\"><span style=\"font-size: 14pt;\"><span style=\"font-size: 13pt;\">Toward Understanding Fire Hazard Recognition in Construction: An immersive VR and Eye-Tracking Pilot Study</span></span></span></span></span>",
+          "authors": "<strong>Kexin Liu</strong>, Gaang Lee, Max Kinateder, Vicente A. Gonzalez",
+          "venue": "Proceedings of the International Symposium on Automation and Robotics in Construction (IAARC)",
+          "year": "2026",
+          "link": "https://doi.org/10.22260/isarc2026/0125",
+          "doi": "10.22260/ISARC2026/0125"
+        },
+        {
+          "id": "block-f7e8466d-e7f1-452e-beec-ac8d4a7b62a1",
+          "type": "publication",
+          "title": "A VLM-Driven Workflow for Generating Context-Specific Fire Hazards for VR Construction Safety Training",
+          "authors": "<strong>Kexin Liu</strong>, Mohamed Sabek, Gaang Lee, Max Kinateder, Vicente A. Gonzalez",
+          "venue": "Proceedings of the International Symposium on Automation and Robotics in Construction (IAARC)",
+          "year": "2026",
+          "link": "https://doi.org/10.22260/isarc2026/0249",
+          "doi": "10.22260/ISARC2026/0249"
         },
         {
           "id": "imported-publication-1",
@@ -88,69 +185,87 @@
           "link": "https://doi.org/10.1007/978-3-031-61503-0_12",
           "doi": "10.1007/978-3-031-61503-0_12"
         }
-      ]
-    },
-    {
-      "id": "imported-2",
-      "type": "custom",
-      "title": "Project",
-      "blocks": [
-        {
-          "id": "imported-project-0",
-          "type": "project",
-          "title": "Optimization Algorithm Based on Subset Simulation for Resource Leveling Problem with Multiple Resources (2019-2021)",
-          "description": "<b data-path-to-node=\"1,0,0\" data-index-in-node=\"0\">Model Reformation:</b> Introduced interval rate variables to the Resource Leveling Problem, eliminating the need for complex repair operators.<br><b data-path-to-node=\"1,1,0\" data-index-in-node=\"0\">Performance Benchmarking:</b> Validated the proposed algorithm in MATLAB, achieving higher stability and solution optimality than traditional Genetic Algorithms.<br><b data-path-to-node=\"1,2,0\" data-index-in-node=\"0\">Application Development:</b> Developed a MATLAB GUI to streamline the optimization process for end-users.",
-          "link": "",
-          "imageUrl": "https://ke-xin-liu.github.io/assets/proj-b-1772042226350-6rltrb6yp.png"
-        },
-        {
-          "id": "imported-project-1",
-          "type": "project",
-          "title": "Evacuation Simulation for a High-Speed Railway Station During Construction (2017)",
-          "description": "<b data-path-to-node=\"1,0,0\" data-index-in-node=\"0\">BIM-Evacuation Modeling:</b> Integrated BIM data into Pathfinder for mixed-flow worker and passenger simulations.<br><b data-path-to-node=\"1,1,0\" data-index-in-node=\"0\">Scenario Evaluation:</b> Analyzed emergency bottlenecks and flow inefficiencies under stair blockage and guided scenarios.<br><b data-path-to-node=\"1,2,0\" data-index-in-node=\"0\">Efficiency Optimization:</b> Reduced evacuation time by 23.7s, supporting data-driven safety planning.",
-          "link": "",
-          "imageUrl": "https://ke-xin-liu.github.io/assets/proj-1771981795128.png"
-        },
-        {
-          "id": "imported-project-2",
-          "type": "project",
-          "title": "Bentley Institute Student Design - (2016)",
-          "description": "<b><span data-path-to-node=\"1,0,0\" data-index-in-node=\"0\">UAV Data Acquisition:</span> </b>Captured high-resolution aerial imagery for reconstruction.<br><span data-path-to-node=\"1,1,0\" data-index-in-node=\"0\"><b>3D Reconstruction:</b></span> Used <span data-path-to-node=\"1,1,0\" data-index-in-node=\"24\">Bentley ContextCapture</span> to perform aerial triangulation and generate high-fidelity mesh models.<br><span data-path-to-node=\"1,2,0\" data-index-in-node=\"0\"><b>VR Integration:</b></span> Used <span data-path-to-node=\"1,2,0\" data-index-in-node=\"21\">Bentley LumenRT</span> to develop virtual reality scenes based on the 3D reconstruction model.",
-          "link": "",
-          "imageUrl": "https://ke-xin-liu.github.io/assets/proj-b-1772079422250-2cz9veeym.png?v=1772079435347"
-        }
-      ]
+      ],
+      "blockSpacing": 0,
+      "fontScale": 95
     },
     {
       "id": "imported-3",
       "type": "custom",
-      "title": "Teaching",
+      "title": "Activity",
       "blocks": [
         {
-          "id": "imported-project-0",
+          "id": "1783581385306",
+          "type": "section",
+          "title": "<span style=\"font-weight: normal;\">Teaching</span>",
+          "blockSpacing": 8,
+          "fontScale": 90
+        },
+        {
+          "id": "imported-project-0-imported-3-2",
           "type": "project",
-          "title": "CIV E 265 - Engineering Drawing and Computer Graphics",
-          "description": "Revit Lab instructor&nbsp;- Fall 2023/2024/202<span style=\"font-size: 11pt;\">5</span>",
+          "title": "<span style=\"font-weight: normal;\">CIV E 265 - Engineering Drawing and Computer Graphics</span>",
+          "description": "<span style=\"color: rgb(87, 83, 78);\">Revit Lab instructor - Fall 2023/2024/202</span><span style=\"color: rgb(87, 83, 78); font-size: 11pt;\">5</span>",
           "link": "",
           "imageUrl": ""
         },
         {
-          "id": "imported-project-1",
+          "id": "imported-project-1-imported-3-3",
           "type": "project",
-          "title": "CIV E 601 - Analytical Methods for Project Management",
-          "description": "<span style=\"color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;\">Teaching Assistant - Fall 2024</span>",
+          "title": "<span style=\"font-weight: normal;\">CIV E 601 - Analytical Methods for Project Management</span>",
+          "description": "<span style=\"color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space: pre-wrap;\">Teaching Assistant - Fall 2024</span>",
           "link": "",
           "imageUrl": ""
         },
         {
-          "id": "imported-project-2",
+          "id": "imported-project-2-imported-3-4",
           "type": "project",
-          "title": "CIV E 409 - Construction Methods",
-          "description": "&nbsp;<span style=\"color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; white-space-collapse: preserve;\">Teaching Assistant </span>- Winter 2024",
+          "title": "<span style=\"font-weight: normal;\">CIV E 409 - Construction Methods</span>",
+          "description": "<span style=\"white-space: pre-wrap; color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Ubuntu, Oxygen, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;\">Teaching Assistant </span><span style=\"color: rgb(87, 83, 78);\">- Winter 2024</span>",
           "link": "",
           "imageUrl": ""
+        },
+        {
+          "id": "1783586818929",
+          "type": "section",
+          "title": "<div><br></div><span style=\"font-weight: normal;\">Selected Awards</span>",
+          "blockSpacing": 0,
+          "fontScale": 100
+        },
+        {
+          "id": "block-1e26e6fd-65b6-49b1-98ee-97b457bf4e02",
+          "type": "news",
+          "date": "<span style=\"font-size: 11pt;\">2025</span>",
+          "text": "<span lang=\"EN-US\" style=\"font-size: 11pt;\">Alberta Graduate Excellence Scholarship</span>",
+          "link": "",
+          "dateFontSize": "10pt"
+        },
+        {
+          "id": "block-8145cd44-aecb-4135-b12c-8a16b0f1b29e",
+          "type": "news",
+          "date": "<span style=\"font-size: 11pt;\">2025</span>",
+          "text": "Joseph D Thompson/Zurich Canada Graduate Award in Construction Engineering and Management",
+          "link": "",
+          "dateFontSize": "10pt"
+        },
+        {
+          "id": "block-4ecaf8f4-7ce3-4e6c-b766-49018e876fda",
+          "type": "news",
+          "date": "<span style=\"font-size: 11pt;\">2024</span>",
+          "text": "Alberta Graduate Excellence Scholarship<span style=\"white-space:pre\">\t</span>",
+          "link": "",
+          "dateFontSize": "10pt"
+        },
+        {
+          "id": "block-b6dd81e6-058f-477a-868d-49ae5e6a1e0f",
+          "type": "news",
+          "date": "<span style=\"font-size: 11pt;\">2023</span>",
+          "text": "Dr Ayesha Khatun Memorial Graduate Award for Women in Civil Engineering",
+          "link": ""
         }
-      ]
+      ],
+      "blockSpacing": 0,
+      "fontScale": 100
     }
   ],
   "theme": "minimal",
@@ -159,12 +274,17 @@
       "id": "imported-link-0",
       "platform": "linkedin",
       "url": "https://www.linkedin.com/in/kexin-liu-425035200"
+    },
+    {
+      "id": "v4zrtmlep",
+      "platform": "Google Scholar",
+      "url": "https://scholar.google.ca/citations?user=-uwCHPoAAAAJ&hl=en"
     }
   ],
   "blogPosts": [
     {
       "id": "1783513775082",
-      "title": "My VR Learning Notes",
+      "title": "How to connect Meta Quest Device to Unity",
       "slug": "my-vr-learning-notes",
       "summary": "",
       "content": "<h2>What I tried</h2><p>Write your VR learning experience here.</p><h2>What I learned</h2><p>Add practical lessons, mistakes, tools, and next steps.</p>",
@@ -174,12 +294,20 @@
       "publishedAt": "2026-07-08",
       "status": "draft",
       "license": "all-rights-reserved",
-      "updatedAt": "2026-07-08"
+      "updatedAt": "2026-07-09"
     }
   ],
   "blogSettings": {
+    "title": "Blog",
+    "description": "<span style=\"font-size: 10pt;\"><span style=\"font-size: 12pt;\"><span style=\"font-size: 11pt; color: rgb(68, 64, 64);\">This blog is a place where I share notes, lessons learned, and reflections from my journey in VR development and research. The posts are based on my personal experience, so they may include mistakes or limitations, but I hope they can be helpful to others who are learning or working in similar areas :)</span></span></span>",
     "defaultLicense": "all-rights-reserved"
   },
+  "pageOrder": [
+    "imported-0",
+    "imported-1",
+    "imported-3",
+    "__blog__"
+  ],
   "style": {
     "bgColor": "#fafafa",
     "textColor": "#1c1917",
