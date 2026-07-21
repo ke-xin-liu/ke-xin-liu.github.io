@@ -112,7 +112,7 @@
         white-space: nowrap;
       }
       .profile-keywords {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
       }
 
       /* Blocks */
@@ -121,6 +121,9 @@
         flex-wrap: wrap;
         gap: 0.5rem;
         margin: 0;
+      }
+      .profile-keywords.block-keywords {
+        margin-top: 1.5rem;
       }
       .keyword-tag {
         background: var(--accent);
@@ -217,7 +220,7 @@
       
       .back-to-top {
         position: fixed;
-        right: 1.25rem;
+        left: 50%;
         bottom: 1.25rem;
         z-index: 120;
         display: inline-flex;
@@ -235,13 +238,13 @@
         opacity: 0;
         padding: 0.55rem 0.8rem;
         pointer-events: none;
-        transform: translateY(8px);
+        transform: translate(-50%, 8px);
         transition: opacity 0.2s ease, transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
       }
       .back-to-top.visible {
         opacity: 1;
         pointer-events: auto;
-        transform: translateY(0);
+        transform: translate(-50%, 0);
       }
       .back-to-top:hover {
         border-color: var(--accent);
@@ -249,7 +252,6 @@
       }
       @media (max-width: 640px) {
         .back-to-top {
-          right: 1rem;
           bottom: 1rem;
         }
       }
@@ -268,7 +270,8 @@
 <body>
   <nav class="navbar"><a href="#section-0-imported-0" class="nav-link active" onclick="showSection('section-0-imported-0', event)">Home</a>
 <a href="#section-1-imported-1" class="nav-link" onclick="showSection('section-1-imported-1', event)">Publication</a>
-<a href="#section-2-imported-3" class="nav-link" onclick="showSection('section-2-imported-3', event)">Activity</a></nav>
+<a href="#section-2-imported-3" class="nav-link" onclick="showSection('section-2-imported-3', event)">Activity</a>
+<a href="blog.html" class="nav-link">Blog</a></nav>
   <main class="main-content">
         <section id="section-0-imported-0" class="content-section home-section active">
           
