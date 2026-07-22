@@ -321,6 +321,7 @@
   "blogSettings": {
     "title": "Blog",
     "description": "<span style=\"font-size: 10pt;\"><span style=\"font-size: 12pt;\"><span style=\"font-size: 11pt; color: rgb(68, 64, 64);\">This blog is a place where I share notes, lessons learned, and reflections from my journey in VR development and research. The posts are based on my personal experience, so they may include mistakes or limitations, but I hope they can be helpful to others who are learning or working in similar areas :)</span></span></span>",
+    "showInWebsite": false,
     "defaultLicense": "all-rights-reserved"
   },
   "pageOrder": [

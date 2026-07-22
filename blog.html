@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kexin Liu Blog</title>
-  <meta name="description" content="This blog is a place where I share notes, lessons learned, and reflections from my journey in VR development and research. The posts are based on my personal experience, so they may include mistakes or limitations, but I hope they can be helpful to others who are learning or working in similar areas :)">
-  <meta property="og:title" content="Kexin Liu Blog">
-  <meta property="og:description" content="This blog is a place where I share notes, lessons learned, and reflections from my journey in VR development and research. The posts are based on my personal experience, so they may include mistakes or limitations, but I hope they can be helpful to others who are learning or working in similar areas :)">
-  <meta property="og:type" content="website">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Kexin Liu Blog hidden</title>
   <style>
       :root { --bg: #fafafa; --text: #1c1917; --accent: #226808; }
       body {
@@ -39,71 +36,26 @@
         padding-bottom: 0.25rem;
         border-bottom: 2px solid transparent;
       }
-      .nav-link.active, .nav-link:hover {
-        color: var(--accent);
-        border-color: var(--accent);
-      }
-      .blog-shell {
-        max-width: 900px;
+      .hidden-shell {
+        max-width: 720px;
         margin: 0 auto;
-        padding: 4rem 2rem;
-      }
-      .blog-header { margin-bottom: 2.5rem; }
-      .blog-header h1 {
-        font-size: clamp(2.25rem, 6vw, 4rem);
-        line-height: 1.05;
-        margin: 0 0 1rem;
-        letter-spacing: 0;
-      }
-      .blog-description {
-        color: #57534e;
-        font-size: 1.15rem;
-        line-height: 1.6;
-        max-width: 720px;
-        margin: 0;
-      }
-      .blog-description p { margin: 0.25rem 0; }
-      .blog-description ul, .blog-description ol { margin-top: 0.5rem; margin-bottom: 0.5rem; }
-      .blog-list { border-top: 1px solid #e7e5e4; }
-      .blog-list-item {
-        border-bottom: 1px solid #e7e5e4;
-        padding: 1.5rem 0;
-      }
-      .blog-list-meta {
-        align-items: center;
-        color: #78716c;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.65rem;
-        font-size: 0.9rem;
-        margin-bottom: 0.35rem;
-      }
-      .blog-list-item h2 {
-        margin: 0 0 0.6rem 0;
-        font-size: 1.25rem;
-        line-height: 1.3;
-      }
-      .blog-list-item p {
-        color: #57534e;
-        margin: 0;
-        max-width: 720px;
-      }
-      .blog-tags {
-        display: inline-flex;
-        flex-wrap: wrap;
-        gap: 0.35rem;
-      }
-      .blog-tag {
-        color: #57534e;
-        font-size: 0.8rem;
-      }
-      .blog-tag::before { content: "#"; color: #a8a29e; }
-      .empty-state {
-        border: 1px dashed #d6d3d1;
-        border-radius: 8px;
-        color: #78716c;
-        padding: 3rem 1rem;
+        padding: 5rem 2rem;
         text-align: center;
+      }
+      .hidden-shell h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0 0 0.75rem;
+      }
+      .hidden-shell p {
+        color: #57534e;
+        margin: 0 0 1.5rem;
+      }
+      .home-link {
+        display: inline-flex;
+        border: 1px solid #e7e5e4;
+        border-radius: 9999px;
+        padding: 0.55rem 1rem;
       }
       
       .site-footer {
@@ -115,88 +67,17 @@
         text-align: center;
       }
 
-      
-      .back-to-top {
-        position: fixed;
-        left: 50%;
-        bottom: 1.25rem;
-        z-index: 120;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        border: 1px solid #e7e5e4;
-        border-radius: 9999px;
-        background: rgba(255,255,255,0.96);
-        color: #44403c;
-        box-shadow: 0 12px 30px rgba(28,25,23,0.12);
-        cursor: pointer;
-        font: inherit;
-        font-size: 0.9rem;
-        font-weight: 600;
-        opacity: 0;
-        padding: 0.55rem 0.8rem;
-        pointer-events: none;
-        transform: translate(-50%, 8px);
-        transition: opacity 0.2s ease, transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-      }
-      .back-to-top.visible {
-        opacity: 1;
-        pointer-events: auto;
-        transform: translate(-50%, 0);
-      }
-      .back-to-top:hover {
-        border-color: var(--accent);
-        color: var(--accent);
-      }
-      @media (max-width: 640px) {
-        .back-to-top {
-          bottom: 1rem;
-        }
-      }
-
-      @media (max-width: 640px) {
-        .navbar { gap: 1rem; flex-wrap: wrap; }
-        .blog-shell { padding: 2.5rem 1.25rem; }
-      }
     </style>
 </head>
 <body>
-  <nav class="navbar"><a href="index.html#section-0-imported-0" class="nav-link">Home</a>
-<a href="index.html#section-1-imported-1" class="nav-link">Publication</a>
-<a href="index.html#section-2-imported-3" class="nav-link">Activity</a>
-<a href="blog.html" class="nav-link active">Blog</a></nav>
-  <main class="blog-shell">
-    <header class="blog-header">
-      <div class="blog-description"><span style="font-size: 10pt;"><span style="font-size: 12pt;"><span style="font-size: 11pt; color: rgb(68, 64, 64);">This blog is a place where I share notes, lessons learned, and reflections from my journey in VR development and research. The posts are based on my personal experience, so they may include mistakes or limitations, but I hope they can be helpful to others who are learning or working in similar areas :)</span></span></span></div>
-    </header>
-    <div class="empty-state">No published blog posts yet.</div>
+  <nav class="navbar"><a href="#section-0-imported-0" class="nav-link active" onclick="showSection('section-0-imported-0', event)">Home</a>
+<a href="#section-1-imported-1" class="nav-link" onclick="showSection('section-1-imported-1', event)">Publication</a>
+<a href="#section-2-imported-3" class="nav-link" onclick="showSection('section-2-imported-3', event)">Activity</a></nav>
+  <main class="hidden-shell">
+    <h1>Blog is currently hidden</h1>
+    <p>This page is not currently shown on the public website.</p>
+    <a class="home-link" href="index.html">Back to home</a>
   </main>
   <footer class="site-footer">© 2026 Kexin Liu. All rights reserved.</footer>
-  
-  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
-    <span aria-hidden="true">&uarr;</span>
-    <span>Top</span>
-  </button>
-  <script>
-    
-    (function () {
-      const button = document.getElementById('back-to-top');
-      if (!button) return;
-
-      function updateBackToTop() {
-        const doc = document.documentElement;
-        const hasScrollableContent = doc.scrollHeight > window.innerHeight + 120;
-        button.classList.toggle('visible', hasScrollableContent && window.scrollY > 180);
-      }
-
-      button.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-      window.addEventListener('scroll', updateBackToTop, { passive: true });
-      window.addEventListener('resize', updateBackToTop);
-      updateBackToTop();
-    })();
-
-  </script>
 </body>
 </html>
