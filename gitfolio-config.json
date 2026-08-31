@@ -84,9 +84,10 @@
             "extension": "png"
           },
           "tags": [
-            "VR",
+            "Safety Training",
             "360° Images",
-            "Safety Training"
+            "VR",
+            "Unity"
           ],
           "tagTheme": "blue",
           "tagOutline": true
@@ -110,7 +111,8 @@
           "imageFit": "contain",
           "tags": [
             "Optimization Algorithm",
-            "MATLAB"
+            "MATLAB",
+            "Revit"
           ],
           "tagTheme": "blue",
           "tagOutline": true
@@ -126,8 +128,9 @@
           "imageHeight": 192,
           "imageFit": "contain",
           "tags": [
+            "Evacuation",
             "BIM",
-            "Evacuation"
+            "Pathfinder"
           ],
           "tagTheme": "blue",
           "tagOutline": true
@@ -323,6 +326,28 @@
           "date": "<span style=\"font-size: 11pt;\">2023</span>",
           "text": "Dr. Ayesha Khatun Memorial Graduate Award for Women in Civil Engineering",
           "link": ""
+        },
+        {
+          "id": "block-ce56dde0-d7e6-448f-a634-99b4b62b6ea6",
+          "type": "section",
+          "title": "<div><br></div><span style=\"font-weight: normal;\">Others</span>",
+          "blockSpacing": 4,
+          "fontScale": 100
+        },
+        {
+          "id": "block-6decfdec-a31e-46d8-a0f8-599f4ed2cafe",
+          "type": "text",
+          "content": "<p><span style=\"letter-spacing: -0.266667px; text-align: justify;\">Reviewer, International Symposium on Automation and Robotics in Construction (ISARC 2024-2026)</span></p>"
+        },
+        {
+          "id": "block-997066de-a809-4fb3-9f96-9adc2b1067f4",
+          "type": "text",
+          "content": "<p><span style=\"font-size: 14.6667px; letter-spacing: -0.266667px;\">Reviewer, Engineering, Construction and Architecture Management&nbsp;</span></p>"
+        },
+        {
+          "id": "block-dc0dd35c-81a2-48bb-8082-0e7b90857d13",
+          "type": "text",
+          "content": "<p><span style=\"color: oklch(0.216 0.006 56.043); letter-spacing: -0.266667px; text-align: justify;\">Session Chair, 43rd International Symposium on Automation and Robotics in Construction (ISARC 2026)</span></p>"
         }
       ],
       "blockSpacing": 0,
