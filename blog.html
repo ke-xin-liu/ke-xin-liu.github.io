@@ -59,7 +59,8 @@
         color: #57534e;
         font-size: 1.15rem;
         line-height: 1.6;
-        max-width: 720px;
+        width: 100%;
+        overflow-wrap: anywhere;
         margin: 0;
       }
       .blog-description p { margin: 0.25rem 0; }
@@ -86,7 +87,8 @@
       .blog-list-item p {
         color: #57534e;
         margin: 0;
-        max-width: 720px;
+        width: 100%;
+        overflow-wrap: anywhere;
       }
       .blog-tags {
         display: inline-flex;
@@ -159,6 +161,14 @@
         .blog-shell { padding: 2.5rem 1.25rem; }
       }
     
+:is(.rich-content, .rsw-ce, .post-content, .generated-content-block) :where(h1,h2,h3,h4,h5,h6) { font-weight:700; line-height:1.25; margin:1.5em 0 .65em; }
+:is(.rich-content, .rsw-ce, .post-content, .generated-content-block) :where(h1) { font-size:2em; }
+:is(.rich-content, .rsw-ce, .post-content, .generated-content-block) :where(h2) { font-size:1.5em; }
+:is(.rich-content, .rsw-ce, .post-content, .generated-content-block) :where(h3) { font-size:1.25em; }
+:is(.rich-content, .rsw-ce, .post-content, .generated-content-block) :where(h4,h5,h6) { font-size:1em; }
+:is(.rich-content, .rsw-ce, .post-content, .generated-content-block) :where(p) { margin:.75em 0; }
+:is(.rich-content, .rsw-ce, .post-content, .generated-content-block) :where(strong,b) { font-weight:700; }
+
 .skill-timeline {container-type:inline-size;container-name:skills-journey;min-width:0;text-align:left;}
 .skill-timeline .timeline-heading {font-size:1.4em;font-weight:650;margin:0 0 28px;line-height:1.4;}
 .skill-timeline .timeline-list {list-style:none;margin:0;padding:0;display:grid;gap:24px;}
@@ -251,7 +261,7 @@
   })();</script>
   <main class="blog-shell">
     <header class="blog-header">
-      <div class="blog-description"><span style="font-size: 10pt;"><span style="font-size: 12pt;"><span style="font-size: 11pt; color: rgb(68, 64, 64);">This blog is a place where I share notes, lessons learned, and reflections from my journey in research. The posts are based on my personal experience, so they may include mistakes or limitations, but I hope they can be helpful to others who are learning or working in similar areas :)</span></span></span></div>
+      <div class="blog-description"><span style="font-size: 10pt;"><span style="font-size: 12pt;"><span style="font-size: 11pt; color: rgb(68, 64, 64);"><span style="font-size: 10pt;">This blog is a place where I share notes, lessons learned, and reflections from my journey in research. The posts are based on my personal experience, so they may include mistakes or limitations, but I hope they can be helpful to others who are learning or working in similar areas :)</span></span></span></span></div>
     </header>
     <div class="blog-list">
         <article class="blog-list-item">
