@@ -405,8 +405,7 @@
 <body data-site-layout="top">
   <nav class="navbar site-navigation" aria-label="Website navigation"><details open><summary>Menu</summary><div class="navigation-links"><a href="#section-0-imported-0" class="nav-link active" onclick="showSection('section-0-imported-0', event)">Home</a>
 <a href="#section-1-imported-1" class="nav-link" onclick="showSection('section-1-imported-1', event)">Publication</a>
-<a href="#section-2-imported-3" class="nav-link" onclick="showSection('section-2-imported-3', event)">Activity</a>
-<a href="blog.html" class="nav-link">Blog</a></div></details></nav><script>(function(){
+<a href="#section-2-imported-3" class="nav-link" onclick="showSection('section-2-imported-3', event)">Activity</a></div></details></nav><script>(function(){
     var nav=document.querySelector('.site-navigation'), menu=nav.querySelector('details'), summary=menu.querySelector('summary'), desktop=matchMedia('(min-width:900px)');
     function resize(){menu.open=desktop.matches;} resize(); desktop.addEventListener('change',resize);
     nav.addEventListener('click',function(event){if(event.target.closest('a')&&!desktop.matches){menu.open=false;summary.focus({preventScroll:true});}});

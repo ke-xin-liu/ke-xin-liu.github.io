@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kexin Liu Blog</title>
-  <meta name="description" content="This blog is a place where I share notes, lessons learned, and reflections from my journey in research. The posts are based on my personal experience, so they may include mistakes or limitations, but I hope they can be helpful to others who are learning or working in similar areas :)">
-  <meta property="og:title" content="Kexin Liu Blog">
-  <meta property="og:description" content="This blog is a place where I share notes, lessons learned, and reflections from my journey in research. The posts are based on my personal experience, so they may include mistakes or limitations, but I hope they can be helpful to others who are learning or working in similar areas :)">
-  <meta property="og:type" content="website">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Kexin Liu Blog hidden</title>
   <style>
       :root { --bg: #ffffff; --text: #1c1917; --accent: #226808; }
       body {
@@ -39,73 +36,26 @@
         padding-bottom: 0.25rem;
         border-bottom: 2px solid transparent;
       }
-      .nav-link.active, .nav-link:hover {
-        color: var(--accent);
-        border-color: var(--accent);
-      }
-      .blog-shell {
-        max-width: 900px;
+      .hidden-shell {
+        max-width: 720px;
         margin: 0 auto;
-        padding: 4rem 2rem;
-      }
-      .blog-header { margin-bottom: 2.5rem; }
-      .blog-header h1 {
-        font-size: clamp(28px, 5vw, 28px);
-        line-height: 1.05;
-        margin: 0 0 1rem;
-        letter-spacing: 0;
-      }
-      .blog-description {
-        color: #57534e;
-        font-size: 1.15rem;
-        line-height: 1.6;
-        width: 100%;
-        overflow-wrap: anywhere;
-        margin: 0;
-      }
-      .blog-description p { margin: 0.25rem 0; }
-      .blog-description ul, .blog-description ol { margin-top: 0.5rem; margin-bottom: 0.5rem; }
-      .blog-list { border-top: 1px solid #e7e5e4; }
-      .blog-list-item {
-        border-bottom: 1px solid #e7e5e4;
-        padding: 1.5rem 0;
-      }
-      .blog-list-meta {
-        align-items: center;
-        color: #78716c;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.65rem;
-        font-size: 0.9rem;
-        margin-bottom: 0.35rem;
-      }
-      .blog-list-item h2 {
-        margin: 0 0 0.6rem 0;
-        font-size: 1.25rem;
-        line-height: 1.3;
-      }
-      .blog-list-item p {
-        color: #57534e;
-        margin: 0;
-        width: 100%;
-        overflow-wrap: anywhere;
-      }
-      .blog-tags {
-        display: inline-flex;
-        flex-wrap: wrap;
-        gap: 0.35rem;
-      }
-      .blog-tag {
-        color: #57534e;
-        font-size: 0.8rem;
-      }
-      .blog-tag::before { content: "#"; color: #a8a29e; }
-      .empty-state {
-        border: 1px dashed #d6d3d1;
-        border-radius: 8px;
-        color: #78716c;
-        padding: 3rem 1rem;
+        padding: 5rem 2rem;
         text-align: center;
+      }
+      .hidden-shell h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0 0 0.75rem;
+      }
+      .hidden-shell p {
+        color: #57534e;
+        margin: 0 0 1.5rem;
+      }
+      .home-link {
+        display: inline-flex;
+        border: 1px solid #e7e5e4;
+        border-radius: 9999px;
+        padding: 0.55rem 1rem;
       }
       
       .site-footer {
@@ -117,49 +67,6 @@
         text-align: center;
       }
 
-      
-      .back-to-top {
-        position: fixed;
-        left: 50%;
-        bottom: 1.25rem;
-        z-index: 120;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        border: 1px solid #e7e5e4;
-        border-radius: 9999px;
-        background: rgba(255,255,255,0.96);
-        color: #44403c;
-        box-shadow: 0 12px 30px rgba(28,25,23,0.12);
-        cursor: pointer;
-        font: inherit;
-        font-size: 0.9rem;
-        font-weight: 600;
-        opacity: 0;
-        padding: 0.55rem 0.8rem;
-        pointer-events: none;
-        transform: translate(-50%, 8px);
-        transition: opacity 0.2s ease, transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-      }
-      .back-to-top.visible {
-        opacity: 1;
-        pointer-events: auto;
-        transform: translate(-50%, 0);
-      }
-      .back-to-top:hover {
-        border-color: var(--accent);
-        color: var(--accent);
-      }
-      @media (max-width: 640px) {
-        .back-to-top {
-          bottom: 1rem;
-        }
-      }
-
-      @media (max-width: 640px) {
-        .navbar { gap: 1rem; flex-wrap: wrap; }
-        .blog-shell { padding: 2.5rem 1.25rem; }
-      }
     
 :is(.rich-content, .rsw-ce, .post-content, .generated-content-block) :where(h1,h2,h3,h4,h5,h6) { font-weight:700; line-height:1.25; margin:1.5em 0 .65em; }
 :is(.rich-content, .rsw-ce, .post-content, .generated-content-block) :where(h1) { font-size:2em; }
@@ -168,57 +75,7 @@
 :is(.rich-content, .rsw-ce, .post-content, .generated-content-block) :where(h4,h5,h6) { font-size:1em; }
 :is(.rich-content, .rsw-ce, .post-content, .generated-content-block) :where(p) { margin:.75em 0; }
 :is(.rich-content, .rsw-ce, .post-content, .generated-content-block) :where(strong,b) { font-weight:700; }
-
-.skill-timeline {container-type:inline-size;container-name:skills-journey;min-width:0;text-align:left;}
-.skill-timeline .timeline-heading {font-size:1.4em;font-weight:650;margin:0 0 28px;line-height:1.4;}
-.skill-timeline .timeline-list {list-style:none;margin:0;padding:0;display:grid;gap:24px;}
-.skill-timeline .timeline-step {position:relative;min-width:0;padding:0 0 0 28px;margin:0;overflow-wrap:anywhere;}
-.timeline-step::before {content:'';position:absolute;left:5px;top:12px;bottom:-36px;width:2px;background:#d6d3d1;}
-.timeline-step:last-child::before {display:none;}
-.timeline-step::after {content:'';position:absolute;left:0;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent,#2563eb);box-shadow:0 0 0 4px var(--bg,#fff);}
-.timeline-date {font-weight:700;line-height:1.5;margin-bottom:8px;color:var(--accent,#2563eb);}
-.timeline-kind {font-size:0.75em;letter-spacing:.02em;line-height:1.6;opacity:.75;margin-bottom:4px;}
-.skill-timeline .timeline-title {font-size:1em;font-weight:600;line-height:1.5;margin:0;}
-.timeline-detail {margin-top:10px;font-size:.875em;line-height:1.6;}
-.timeline-detail summary,.timeline-full > summary {cursor:pointer;color:var(--accent,#2563eb);font-weight:500;min-height:28px;}
-.timeline-detail p {margin:8px 0;white-space:pre-line;}
-.timeline-detail a {color:var(--accent,#2563eb);text-decoration:underline;}
-.timeline-full {margin-top:24px;}
-.timeline-full > .timeline-list {margin-top:24px;}
-.timeline-sr-only {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
-.skill-timeline summary:focus-visible,.skill-timeline a:focus-visible {outline:2px solid var(--accent,#2563eb);outline-offset:3px;}
-@container skills-journey (min-width:440px) {.timeline-overview[data-count="2"] {--timeline-columns:2;}}
-@container skills-journey (min-width:620px) {.timeline-overview[data-count="3"] {--timeline-columns:3;}}
-@container skills-journey (min-width:800px) {.timeline-overview[data-count="4"] {--timeline-columns:4;}}
-@container skills-journey (min-width:960px) {.timeline-overview[data-count="5"] {--timeline-columns:5;}}
-@container skills-journey (min-width:440px) {
- .skill-timeline .timeline-overview {grid-template-columns:repeat(var(--timeline-columns,1),minmax(0,1fr));}
-}
-@container skills-journey (min-width:440px) {
- .timeline-overview[data-count="2"] {gap:0;}
- .timeline-overview[data-count="2"] > .timeline-step {padding:60px 20px 0 0;}
- .timeline-overview[data-count="2"] .timeline-date {position:absolute;top:0;left:0;}
- .timeline-overview[data-count="2"] > .timeline-step::before {left:6px;right:-6px;top:40px;bottom:auto;height:2px;width:auto;}
- .timeline-overview[data-count="2"] > .timeline-step::after {top:35px;}
-}@container skills-journey (min-width:620px) {
- .timeline-overview[data-count="3"] {gap:0;}
- .timeline-overview[data-count="3"] > .timeline-step {padding:60px 20px 0 0;}
- .timeline-overview[data-count="3"] .timeline-date {position:absolute;top:0;left:0;}
- .timeline-overview[data-count="3"] > .timeline-step::before {left:6px;right:-6px;top:40px;bottom:auto;height:2px;width:auto;}
- .timeline-overview[data-count="3"] > .timeline-step::after {top:35px;}
-}@container skills-journey (min-width:800px) {
- .timeline-overview[data-count="4"] {gap:0;}
- .timeline-overview[data-count="4"] > .timeline-step {padding:60px 20px 0 0;}
- .timeline-overview[data-count="4"] .timeline-date {position:absolute;top:0;left:0;}
- .timeline-overview[data-count="4"] > .timeline-step::before {left:6px;right:-6px;top:40px;bottom:auto;height:2px;width:auto;}
- .timeline-overview[data-count="4"] > .timeline-step::after {top:35px;}
-}@container skills-journey (min-width:960px) {
- .timeline-overview[data-count="5"] {gap:0;}
- .timeline-overview[data-count="5"] > .timeline-step {padding:60px 20px 0 0;}
- .timeline-overview[data-count="5"] .timeline-date {position:absolute;top:0;left:0;}
- .timeline-overview[data-count="5"] > .timeline-step::before {left:6px;right:-6px;top:40px;bottom:auto;height:2px;width:auto;}
- .timeline-overview[data-count="5"] > .timeline-step::after {top:35px;}
-}</style>
+</style>
 <style>
     .site-navigation .navigation-links { display:flex;justify-content:center;gap:2rem;flex-wrap:wrap; }
     .site-navigation { display:block; }
@@ -250,56 +107,19 @@
     @media(prefers-reduced-motion:reduce) { .content-section { animation:none; } }
   </style></head>
 <body data-site-layout="top">
-  <nav class="navbar site-navigation" aria-label="Website navigation"><details open><summary>Menu</summary><div class="navigation-links"><a href="index.html#section-0-imported-0" class="nav-link">Home</a>
-<a href="index.html#section-1-imported-1" class="nav-link">Publication</a>
-<a href="index.html#section-2-imported-3" class="nav-link">Activity</a>
-<a href="blog.html" class="nav-link active">Blog</a></div></details></nav><script>(function(){
+  <nav class="navbar site-navigation" aria-label="Website navigation"><details open><summary>Menu</summary><div class="navigation-links"><a href="#section-0-imported-0" class="nav-link active" onclick="showSection('section-0-imported-0', event)">Home</a>
+<a href="#section-1-imported-1" class="nav-link" onclick="showSection('section-1-imported-1', event)">Publication</a>
+<a href="#section-2-imported-3" class="nav-link" onclick="showSection('section-2-imported-3', event)">Activity</a></div></details></nav><script>(function(){
     var nav=document.querySelector('.site-navigation'), menu=nav.querySelector('details'), summary=menu.querySelector('summary'), desktop=matchMedia('(min-width:900px)');
     function resize(){menu.open=desktop.matches;} resize(); desktop.addEventListener('change',resize);
     nav.addEventListener('click',function(event){if(event.target.closest('a')&&!desktop.matches){menu.open=false;summary.focus({preventScroll:true});}});
     nav.addEventListener('keydown',function(event){if(event.key==='Escape'&&!desktop.matches){menu.open=false;summary.focus();}});
   })();</script>
-  <main class="blog-shell">
-    <header class="blog-header">
-      <div class="blog-description"><span style="font-size: 10pt;"><span style="font-size: 12pt;"><span style="font-size: 11pt; color: rgb(68, 64, 64);"><span style="font-size: 10pt;">This blog is a place where I share notes, lessons learned, and reflections from my journey in research. The posts are based on my personal experience, so they may include mistakes or limitations, but I hope they can be helpful to others who are learning or working in similar areas :)</span></span></span></span></div>
-    </header>
-    <div class="blog-list">
-        <article class="blog-list-item">
-          <div class="blog-list-meta">
-            
-            <span>2026-07-08</span>
-            <span class="blog-tags"><span class="blog-tag">VR</span><span class="blog-tag">Tools</span><span class="blog-tag">Unity</span></span>
-          </div>
-          <h2><a href="blog/my-vr-learning-notes.html">How to combine mesh in Unity</a></h2>
-          <p>I used Blender to combine meshes, but sometimes I just want to combine meshes in Unity itself, instead of exporting them into Blender, combine them, them back to Unity. Therefore, </p>
-        </article></div>
+  <main class="hidden-shell">
+    <h1>Blog is currently hidden</h1>
+    <p>This page is not currently shown on the public website.</p>
+    <a class="home-link" href="index.html">Back to home</a>
   </main>
   <footer class="site-footer">© 2026 Kexin Liu. All rights reserved.</footer>
-  
-  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
-    <span aria-hidden="true">&uarr;</span>
-    <span>Top</span>
-  </button>
-  <script>
-    
-    (function () {
-      const button = document.getElementById('back-to-top');
-      if (!button) return;
-
-      function updateBackToTop() {
-        const doc = document.documentElement;
-        const hasScrollableContent = doc.scrollHeight > window.innerHeight + 120;
-        button.classList.toggle('visible', hasScrollableContent && window.scrollY > 180);
-      }
-
-      button.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-      window.addEventListener('scroll', updateBackToTop, { passive: true });
-      window.addEventListener('resize', updateBackToTop);
-      updateBackToTop();
-    })();
-
-  </script>
 </body>
 </html>
