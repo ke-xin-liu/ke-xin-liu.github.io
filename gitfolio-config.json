@@ -292,7 +292,7 @@
         {
           "id": "1783586818929",
           "type": "section",
-          "title": "<div><br></div><span style=\"font-weight: normal;\">Selected Awards</span>",
+          "title": "<div><span style=\"font-weight: normal; font-size: 1.5em;\"><span style=\"font-size: 18pt;\">Selected Awards</span></span></div>",
           "blockSpacing": 4,
           "fontScale": 100
         },
@@ -330,7 +330,7 @@
         {
           "id": "block-ce56dde0-d7e6-448f-a634-99b4b62b6ea6",
           "type": "section",
-          "title": "<div><br></div><span style=\"font-weight: normal;\">Service</span>",
+          "title": "<div><span style=\"font-weight: normal; font-size: 1.5em;\"><span style=\"font-size: 18pt;\">Service</span></span></div>",
           "blockSpacing": 4,
           "fontScale": 100
         },
